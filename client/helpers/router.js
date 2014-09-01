@@ -39,7 +39,7 @@ Router.onBeforeAction(filters.setBackground);
 // remove text when route changes
 Router.onBeforeAction(filters.clearInputValue);
 
-// Router.onAfterAction(filters.removeExtraButtons)
+Router.onAfterAction(filters.removeExtraButtons)
 
 // Routes
 

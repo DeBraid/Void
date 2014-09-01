@@ -1,8 +1,7 @@
 Template.admaxminisportballs.settings = function () {
     return {
         showFilter: true,
-        rowsPerPage: 5,
-        showNavigation: 'auto',
+        showNavigation: 'never',
         fields: [{
                   key: 'Product Description',
                   label: 'Product',
@@ -17,6 +16,9 @@ Template.admaxminisportballs.settings = function () {
 
                       return new Spacebars.SafeString(html);
                     }
+                }, {
+                    key: 'Notes',
+                    label: 'Notes'
                 }, {
                     key: '100',
                     label: '100'

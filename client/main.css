@@ -14,6 +14,21 @@ h1 {
 
 }
 
+td {
+  font-size: 1.25em;
+  margin-top: 1.5em;
+}
+
+.productname {
+  margin-top: 0;
+  font-size: 1.75em;
+}
+
+td.Product.Description {
+  width: 33% !important;
+}
+
+
 
 
 /*********************************************************************************/
@@ -22,7 +37,7 @@ h1 {
 .tableimages {
   width:50%;
   overflow: hidden;
-  max-height: 20em;
+  max-height: 10em;
 }
 /* headings */
 .reactive-table .sortable {

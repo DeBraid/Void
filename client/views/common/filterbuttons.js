@@ -14,3 +14,12 @@ Template.filterbuttons.events({
 
     }
 });
+Template.filterbuttons.rendered = function () {
+  var buttonGroup = $('.filter-button-container'); 
+    
+    Meteor.defer(function () {
+      if ( buttonGroup.length > 1 ) {
+        buttonGroup.get(1).remove();
+    }
+    } )
+};

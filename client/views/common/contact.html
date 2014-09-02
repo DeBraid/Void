@@ -2,7 +2,10 @@
 
     {{> contactInfo}}
 
-<div class="row row-centered">
+</template>
+
+<template name="contactForm">
+  <div class="row row-centered">
   <div id="contact-container" class="col-xs-12 col-centered">
     {{#if formSubmitted}}
       <!-- Successful Submission Message -->
@@ -52,7 +55,7 @@
     {{/if}}
   </div>
 </div>
-
+  
 </template>
 
 <template name="contactInfo">

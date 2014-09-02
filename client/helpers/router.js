@@ -16,14 +16,6 @@ Router.configure({
 
 // Filters
 var filters = {
-
-  removeExtraButtons: function () {
-    var buttonGroup = $('.filter-button-container'); 
-    
-    if ( buttonGroup.length > 1 ) {
-        buttonGroup.get(1).remove();
-    }
-  }, 
   clearInputValue: function () {
     var inp = $('.reactive-table-input');
     inp.val('');
@@ -39,7 +31,7 @@ Router.onBeforeAction(filters.setBackground);
 // remove text when route changes
 Router.onBeforeAction(filters.clearInputValue);
 
-Router.onAfterAction(filters.removeExtraButtons)
+// Router.onAfterAction(filters.removeExtraButtons)
 
 // Routes
 

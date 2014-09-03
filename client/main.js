@@ -92,3 +92,26 @@ Template.filterbuttons.rendered = function() {
   })
 
 };
+
+/* 
+
+Code below added to reactive_table.js
+
+
+Template.reactiveTable.helpers({
+  'getField': function (object) {
+        var fn = this.fn || function (value) { return value; };
+        var key = this.key || this;
+        var value = get(object, key);
+        
+        if ( value.length == undefined ) {
+            value = value.toFixed(2)
+        } else {
+            value = value;
+        }
+        return fn(value, object);
+    }
+});
+
+*/
+

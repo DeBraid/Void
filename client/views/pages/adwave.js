@@ -2,11 +2,11 @@
 Template.adwave.helpers({
 settings: function () {
     return {
-        rowsPerPage: 10,
+        showNavigation: 'never',
         showFilter: true,
         fields: [{
                 key: 'Product Description',
-                label: 'Product',
+                label: 'Product -- Price Per Balloon $CAD 2ABCD',
                 fn: function (name, object) {
                     var image = object.PSD.slice(0,-4);
             

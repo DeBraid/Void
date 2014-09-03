@@ -14,6 +14,7 @@ Template.filterbuttons.events({
 
     }
 });
+
 Template.filterbuttons.rendered = function () {
   var buttonGroup = $('.filter-button-container'); 
     
@@ -23,3 +24,18 @@ Template.filterbuttons.rendered = function () {
     }
     } )
 };
+
+// Template.filterbuttons.rendered = function () {
+//     var route = Router.current();
+//     // var foo = Session.get('' + route.path + '');
+//     var foo = route.route.name;
+//     console.log(foo);
+
+//     var baz = Session.set('ddd', foo);
+//     console.log('baz: ', baz)
+    
+//     console.log('filterbtn route is here:', route);
+    
+//     console.log('filterbtn this.data is here:', this.data);
+    
+// };

@@ -64,40 +64,6 @@ Template.filterbuttons.helpers({
   }
 });
 
-// Template.filterbuttons.rendered = function() {
-//   var self = this;
-//   Meteor.defer(function  (argument) {
-//       var names = $('.productname').text().split(' ');
-
-//   if ( names.length > 1 ) {
-//     console.log("filter ran, NO productname exists", names);
-//      self.state.set('words', names);
-
-//   } else {
-//         console.log("filterbuttons rendered, no trace of productname ");
-//         console.log("in filter else statement names are:", names);
-        //     var data = [];
-
-        // var words = $('h1').map(function () {
-        //   var wordArr = [];
-        //   wordArr.push($(this).text().split(' '));
-        //   data.push( _.flatten(wordArr, false) );
-          
-        //   stuff = _.flatten(data);
-        //   uniqStr = _.uniq(stuff);
-        //   return uniqStr;
-          
-        // });
-
-            
-//           self.state.set('words', _.uniq(words));
-
-//       }
-//   })
-
-// };
-
-
 
 Template.filterbuttons.rendered = function() {
   var self = this;

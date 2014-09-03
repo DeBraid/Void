@@ -38,9 +38,39 @@ td.Product.Description {
 /* TABLE (REACTIVE TABLE)                                                                        */
 /*********************************************************************************/
 .tableimages {
-  width:50%;
+  width:36%;
   overflow: hidden;
   max-height: 10em;
+}
+@media (max-width: 1199px) {
+    .tableimages {
+        width: 42%;
+        max-height: 9.5em;
+    }
+}
+@media (max-width: 990px) {
+    .tableimages {
+        width: 55%;
+    }
+}
+@media (max-width: 725px) {
+    .tableimages {
+        max-height: 8em;
+    }
+}
+
+@media (max-width: 425px) {
+    .tableimages {
+        width: 90%;
+        max-height: 4.5em;
+    }
+    .productname {
+      font-size: 1.1em;
+    }
+    td {
+      font-size: 1em;
+      margin-top: 1em;
+    }
 }
 /* headings */
 .reactive-table .sortable {
@@ -186,6 +216,7 @@ header
 /*********************************************************************************/
 #codes {
   float: right;
+  padding-right: 2em;
 }
 
 /*********************************************************************************/
@@ -233,7 +264,7 @@ header
 
 #mapleleaf img {
   max-width: 3.5em;
-  float: left;
+  float: right;
 }
 
 @media (max-width: 1180px) {

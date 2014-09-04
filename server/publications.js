@@ -9,6 +9,12 @@ All publications-related code.
 Meteor.publish('tags', function() {
   return Tags.find();
 });
+Meteor.publish('adwavetags', function() {
+  return Adwavetags.find();
+});
+Meteor.publish('qltags', function() {
+  return Qltags.find();
+});
 Meteor.publish('hearttags', function() {
   return Hearttags.find();
 });

@@ -4,6 +4,9 @@
     {{> qlroundheader}}  
   </div>
   <div class="row">
+    {{> yield region="filterdropdown" }}
+  </div>
+  <div class="row">
     {{> reactiveTable collection=quicklinkonecolour settings=settings}}
   </div>
   

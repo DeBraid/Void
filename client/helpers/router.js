@@ -106,52 +106,61 @@ Router.map(function() {
     path: '/quicklinkonecolour',
     template: 'quicklinkonecolour',
     yieldTemplates: {
-      'charges': {to: 'charges'}
+      'charges': {to: 'charges'},
+      'filterdropdown': {to: 'filterdropdown'}
     }, 
     waitOn: function () {
       return [Meteor.subscribe('quicklinkonecolour'),
-              Meteor.subscribe('charges')];
+              Meteor.subscribe('charges'),
+              Meteor.subscribe('qltags')];
     },
     data: function () {
       return {
         quicklinkonecolour: Quicklinkonecolour.find(),
+        tags: Qltags.find(),
         charges: Charges.find()
       }
     }
   });
-
 
   this.route('adwave', {
     path: '/adwave',
     template: 'adwave',
     yieldTemplates: {
-      'charges': {to: 'charges'}
+      'charges': {to: 'charges'},
+      'filterdropdown': {to: 'filterdropdown'}
     }, 
     waitOn: function () {
       return [Meteor.subscribe('adwave'),
-              Meteor.subscribe('charges')];
+              Meteor.subscribe('charges'),
+              Meteor.subscribe('adwavetags')];
     },
     data: function () {
       return {
         adwave: Adwave.find(),
+        tags: Adwavetags.find(),
         charges: Charges.find()
       }
     }
   });
 
+
   this.route('adwrap', {
     path: '/adwrap',
     template: 'adwrap',
     yieldTemplates: {
-      'charges': {to: 'charges'}
+      'charges': {to: 'charges'},
+      'filterdropdown': {to: 'filterdropdown'}
     }, 
     waitOn: function () {
       return [Meteor.subscribe('adwrap'),
-              Meteor.subscribe('charges')];
+              Meteor.subscribe('charges'),
+              Meteor.subscribe('qltags')];
     },
     data: function () {
       return {
         adwrap: Adwrap.find(),
+        tags: Qltags.find(),
         charges: Charges.find()
       }
     }

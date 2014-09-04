@@ -1,3 +1,34 @@
+(function ($) {
+
+/**
+* @function
+* @property {object} jQuery plugin which runs handler function once specified element is inserted into the DOM
+* @param {function} handler A function to execute at the time when the element is inserted
+* @param {bool} shouldRunHandlerOnce Optional: if true, handler is unbound after its first invocation
+* @example $(selector).waitUntilExists(function);
+*/
+
+$.fn.waitUntilExists    = function (handler, shouldRunHandlerOnce, isChild) {
+    var found       = 'found';
+    var $this       = $(this.selector);
+    var $elements   = $this.not(function () { return $(this).data(found); }).each(handler).data(found, true);
+
+    if (!isChild)
+    {
+        (window.waitUntilExists_Intervals = window.waitUntilExists_Intervals || {})[this.selector] =
+            window.setInterval(function () { $this.waitUntilExists(handler, shouldRunHandlerOnce, true); }, 500)
+        ;
+    }
+    else if (shouldRunHandlerOnce && $elements.length)
+    {
+        window.clearInterval(window.waitUntilExists_Intervals[this.selector]);
+    }
+
+    return $this;
+}
+
+}(jQuery));
+
 /* ---------------------------------------------------- +/
 
 ## Main ##
@@ -52,7 +83,9 @@ Template.filterbuttons.created = function() {
 };
 
 Template.reactiveTable.rendered = function () {
+  Meteor.defer(function  (argument) {
     UI.insert( UI.render( Template.filterbuttons ) , $('.reactive-table-filter').get(0) )
+  })
 };
 
 Template.filterbuttons.helpers({
@@ -68,7 +101,10 @@ Template.filterbuttons.helpers({
 Template.filterbuttons.rendered = function() {
   var self = this;
 
+
   Meteor.defer(function  (argument) {
+      $('.productname').waitUntilExists(function (argument) {
+        
       var names = $('.productname').text().split(' ');
       console.log('names inside 1st defer are: ', names);
 
@@ -89,6 +125,7 @@ Template.filterbuttons.rendered = function() {
             self.state.set('words', _.uniq(names));
           }
       })
+    })
   })
 
 };

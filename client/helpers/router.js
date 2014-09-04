@@ -75,7 +75,12 @@ Router.map(function() {
       return {
         roundballoons: Roundballoons.find(),
         charges: Charges.find(), 
-        filterData: {tags: [{ tag: 'derek'},{ tag: 'brian'},{ tag: 'steve'}]}
+        filterData: { tags: [
+                      { tag: 'Standard'},{ tag: 'Jewel'},{ tag: 'Fashion'},{ tag: 'Metallic'},
+                      { tag: 'Pearl'},{ tag: 'Neon'},{ tag: 'Globe'},{ tag: 'Super Agate'},
+                      { tag: '9inch'},{ tag: '11inch'},{ tag: '16inch'}
+                            ]
+                    }
       }
     }
   });

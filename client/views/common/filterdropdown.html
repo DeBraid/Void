@@ -1,4 +1,3 @@
-
 <template name="filterdropdown">
 
     <div class="filter-button-container">
@@ -22,8 +21,14 @@
             </ul>
         </div>
 
+        {{#with filterData}} 
+                  {{#each tags}}
+                   <p>{{ tag }}</p>
+                  {{/each }} 
+                {{/with}}
+
         {{#each roundballoons }}
-        <h3>{{ [Product Description] }}</h3>
+        <!-- <h3>{{ [Product Description] }}</h3> -->
         {{/each}}
     </div>
 </template>

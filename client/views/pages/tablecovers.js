@@ -5,7 +5,7 @@ Template.nonfitted.settings = function () {
         showFilter: true,
         fields: [{
                   key: 'Product Description',
-                  label: 'Product',
+                  label: 'Product -- Price Per Piece $CAD 4C2D',
                   fn: function (name, object) {
 
                     var image = object.PSD.slice(0,-4);
@@ -46,9 +46,10 @@ Template.nonfitted.settings = function () {
 Template.stretch.settings = function () {
     return {
         showFilter: true,
+        showNavigation: 'never',
         fields: [{
                   key: 'Product Description',
-                  label: 'Product',
+                  label: 'Product -- Price Per Piece 4C2D',
                   fn: function (name, object) {
 
                     var image = object.PSD.slice(0,-4);

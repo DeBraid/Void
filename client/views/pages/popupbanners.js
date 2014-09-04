@@ -4,7 +4,7 @@ Template.popupbanners.settings = function () {
         showNavigation: 'never',
         fields: [{
                   key: 'Product Description',
-                  label: 'Product',
+                  label: 'Product -- Price Per Piece $CAD 5C',
                   fn: function (name, object) {
 
                       var image = object.PSD.slice(0,-4);

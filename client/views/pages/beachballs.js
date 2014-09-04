@@ -5,7 +5,7 @@ Template.beachballs.settings = function () {
         showNavigation: 'auto',
         fields: [{
                   key: 'Product Description',
-                  label: 'Product',
+                  label: 'Product -- Price Per Ball $CAD 2ABC',
                   fn: function (name, object) {
 
                       var image = object.PSD.slice(0,-4);

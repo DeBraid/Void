@@ -5,7 +5,7 @@ Template.promoflagscontent.settings = function () {
         showFilter: true,
         fields: [{
                     key: 'Product Description',
-                    label: 'Product',
+                    label: 'Product -- Price Per Piece $CAD 5C',
                     fn: function (name, object) {
                           var image = object.PSD.slice(0,-4);
                           var html = '<h3 class="productname">' + name + '</h3>' + 
@@ -45,7 +45,7 @@ Template.econflags.settings = function () {
         showFilter: true,
         fields: [{
                     key: 'Product Description',
-                    label: 'Product',
+                    label: 'Product -- Price Per Piece $CAD 4C',
                     fn: function (name, object) {
                           var image = object.PSD.slice(0,-4);
                           var html = '<h3 class="productname">' + name + '</h3>' + 

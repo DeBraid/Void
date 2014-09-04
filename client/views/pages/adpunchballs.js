@@ -1,11 +1,10 @@
 Template.adpunchballs.settings = function () {
     return {
         showFilter: true,
-        rowsPerPage: 5,
-        showNavigation: 'auto',
+        showNavigation: 'never',
         fields: [{
-                  key: 'Product Description',
-                  label: 'Product',
+                  key: 'Product Description',            
+                  label: 'Product -- Price Per Ball $CAD 4A',
                   fn: function (name, object) {
 
                       var image = object.PSD.slice(0,-4);

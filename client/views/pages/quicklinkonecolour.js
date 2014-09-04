@@ -1,9 +1,10 @@
 Template.quicklinkonecolour.settings = function () {
     return {
         showFilter: true,
+        showNavigation: 'never',
         fields: [{
                   key: 'Product Description',
-                  label: 'Product',
+                  label: 'Product -- Price Per Balloon $CAD 3A',
                   fn: function (name, object) {
                     var image = object.PSD.slice(0,-4);
                   

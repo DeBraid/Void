@@ -1,11 +1,10 @@
 Template.adwrap.settings = function () {
     return {
         showFilter: true,
-        rowsPerPage: 5,
-        showNavigation: 'auto',
+        showNavigation: 'never',
         fields: [{
                   key: 'Product Description',
-                  label: 'Product',
+                  label: 'Product -- Price Per Balloon $CAD 2ABCD',
                   fn: function (name, object) {
                       var image = object.PSD.slice(0,-4);
                       var html = '<h3 class="productname">' + name + '</h3>' + 

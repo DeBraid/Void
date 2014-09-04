@@ -69,18 +69,14 @@ Router.map(function() {
     }, 
     waitOn: function () {
       return [Meteor.subscribe('roundballoons'),
-              Meteor.subscribe('charges')];
+              Meteor.subscribe('charges'),
+              Meteor.subscribe('tags')];
     },
     data: function () {
       return {
         roundballoons: Roundballoons.find(),
         charges: Charges.find(), 
-        filterData: { tags: [
-                      { tag: 'Standard'},{ tag: 'Jewel'},{ tag: 'Fashion'},{ tag: 'Metallic'},
-                      { tag: 'Pearl'},{ tag: 'Neon'},{ tag: 'Globe'},{ tag: 'Super Agate'},
-                      { tag: '9inch'},{ tag: '11inch'},{ tag: '16inch'}
-                            ]
-                    }
+        tags: Tags.find()
       }
     }
   });
@@ -89,15 +85,18 @@ Router.map(function() {
     path: '/heartballoons',
     template: 'heartballoons',
     yieldTemplates: {
-      'charges': {to: 'charges'}
+      'charges': {to: 'charges'},
+      'filterdropdown': {to: 'filterdropdown'},
     }, 
     waitOn: function () {
       return [Meteor.subscribe('heartballoons'),
+              Meteor.subscribe('hearttags'),
               Meteor.subscribe('charges')];
     },
     data: function () {
       return {
         heartballoons: Heartballoons.find(),
+        tags: Hearttags.find(),
         charges: Charges.find()
       }
     }

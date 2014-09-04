@@ -46,3 +46,9 @@ Template.reactiveTable.events({
         
     }
 });
+
+// Template.reactiveTable.rendered = function () {
+//   Meteor.defer(function  (argument) {
+//     UI.insert( UI.render( Template.filterdropdown ) , $('.reactive-table-filter').get(0) )
+//   })
+// };

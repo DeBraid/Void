@@ -6,6 +6,12 @@ All publications-related code.
 
 /+ ---------------------------------------------------- */
 
+Meteor.publish('tags', function() {
+  return Tags.find();
+});
+Meteor.publish('hearttags', function() {
+  return Hearttags.find();
+});
 
 Meteor.publish('adriteeconomyline', function() {
   return Adriteeconomyline.find();

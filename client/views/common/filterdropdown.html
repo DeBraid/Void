@@ -8,11 +8,11 @@
             </button>
             <ul class="dropdown-menu" role="menu">
 
-                {{#with filterData}} 
+                
                   {{#each tags}}
                     <li><a id="{{ tag }}" class="tags" href="#">{{ tag }}</a></li>
                   {{/each }} 
-                {{/with}}
+                
                 <li class="divider"></li>
                 <li><a href="pioneerline2014catalogue.pdf">Full PDF Catalogue</a>
                 </li>
@@ -21,15 +21,6 @@
             </ul>
         </div>
 
-        {{#with filterData}} 
-                  {{#each tags}}
-                   <p>{{ tag }}</p>
-                  {{/each }} 
-                {{/with}}
-
-        {{#each roundballoons }}
-        <!-- <h3>{{ [Product Description] }}</h3> -->
-        {{/each}}
     </div>
 </template>
 

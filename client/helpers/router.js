@@ -64,7 +64,8 @@ Router.map(function() {
     path: '/roundballoons',
     template: 'roundballoons',
     yieldTemplates: {
-      'charges': {to: 'charges'}
+      'charges': {to: 'charges'},
+      'filterdropdown': {to: 'filterdropdown'}
     }, 
     waitOn: function () {
       return [Meteor.subscribe('roundballoons'),
@@ -73,7 +74,8 @@ Router.map(function() {
     data: function () {
       return {
         roundballoons: Roundballoons.find(),
-        charges: Charges.find()
+        charges: Charges.find(), 
+        filterData: {tags: [{ tag: 'derek'},{ tag: 'brian'},{ tag: 'steve'}]}
       }
     }
   });

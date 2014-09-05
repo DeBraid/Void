@@ -1,5 +1,31 @@
 <template name="palimg">
-  <div id="palimg" class="col-sm-6">
-    <img src="side1.jpg" alt="">
+  <div id="palimg">
+            <div class="btn-group pull-left">
+            <button type="button" id="main-select-button" class="btn btn-success btn-lg dropdown-toggle pull-right" data-toggle="dropdown">
+                Select Colour Palette <span class="caret"></span>
+            </button>
+            <ul id="colour-palette" class="dropdown-menu" role="menu">
+
+                
+                  {{#each colourPals }}
+                    <li><a id="{{ desc }}" class="srcs" href="#">{{ desc }}: src {{ src }}</a>
+                    <img class="thumbnails" src="{{ src }}" alt=""></li>
+                  {{/each }} 
+                
+                <li class="divider"></li>
+                <li class="pull-right"><a id="close" href="#">Close</a>
+                </li>
+            </ul>
+        
+       <!--  <div class="row">
+          {{#each colourPals }}
+        <h3>{{ desc }}</h3>
+          <img class="thumbnails" src="{{ src }}" alt="">
+        {{/each}}
+        </div> -->
+
+    </div>
   </div>
 </template>
+
+

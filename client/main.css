@@ -122,6 +122,10 @@ td.Product.Description {
 .dropdown-menu {
   background-color: #82c13f !important;
 }
+/* dropdown */
+#colour-palette {
+  background-color: #FFF !important;
+}
 
 
 /*********************************************************************************/
@@ -450,6 +454,6 @@ header
   font-weight: 100;
 }
 
-#palimg > img {
-  max-height: 5em;
+#palimg img {
+  max-height: 3em;
 }

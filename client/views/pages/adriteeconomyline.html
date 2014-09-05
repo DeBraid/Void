@@ -4,7 +4,10 @@
     <div class="row">
       {{> adriteheader }}
     </div>
-      
+
+    <div class="row">
+      {{> yield region='filterdropdown'}}
+    </div>      
     <div class="row">
       {{> reactiveTable collection=adriteeconomyline settings=settings}}
     </div>

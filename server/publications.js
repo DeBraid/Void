@@ -12,6 +12,28 @@ Meteor.publish('tags', function() {
 Meteor.publish('adwavetags', function() {
   return Adwavetags.find();
 });
+Meteor.publish('eventtags', function() {
+  return Eventtags.find();
+});
+Meteor.publish('largequanttags', function() {
+  return Largequanttags.find();
+});
+
+Meteor.publish('gianttags', function() {
+  return Gianttags.find();
+});
+Meteor.publish('microfoiltags', function() {
+  return Microfoiltags.find();
+});
+Meteor.publish('cloudbustertags', function() {
+  return Cloudbustertags.find();
+});
+Meteor.publish('outdoortags', function() {
+  return Outdoortags.find();
+});
+Meteor.publish('adritetags', function() {
+  return Adritetags.find();
+});
 Meteor.publish('qltags', function() {
   return Qltags.find();
 });
@@ -90,6 +112,9 @@ Meteor.publish('charges', function() {
 
 Meteor.publish('eventtents', function() {
   return Eventtents.find();
+});
+Meteor.publish('eventtentwalls', function() {
+  return Eventtentwalls.find();
 });
 
 Meteor.publish('geninfo', function() {

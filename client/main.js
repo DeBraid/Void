@@ -44,6 +44,10 @@ Template.reactiveTable.events({
         newTitle.text('' + myText + '');
         newModal.html('<div class="col-lg-12"><img id="modalImage" src="'+ myImage + '" /></div>');
         
+    }, 
+    'keyup .reactive-table-input': function (argument) {
+        // var foo = $('table > tbody > tr:nth-child(1) > td.Product.Description > div > img').attr('src');
+        // console.log(foo);
     }
 });
 

@@ -7,7 +7,9 @@
 
     
   </div>
-  
+  <div class="row">
+    {{> yield region='filterdropdown' }}
+  </div>
   <div class="row">
     {{> reactiveTable collection=outdoorballoons settings=settings}}
   </div>

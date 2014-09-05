@@ -449,3 +449,7 @@ header
 .fa-star-o {
   font-weight: 100;
 }
+
+#palimg > img {
+  max-height: 5em;
+}

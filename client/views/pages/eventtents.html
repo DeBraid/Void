@@ -7,11 +7,17 @@
 
     </div>
   </div>
-
+  
+  <div class="row">
+      {{> yield region='filterdropdown' }}
+  </div>
   <div class="row">
       {{> reactiveTable collection=eventtents settings=settings }}
   </div>
 
+  <div class="row">
+    {{> eventtentwalls }}
+  </div>
   <h4><strong>Set-Up Charge:</strong> $51.00 only one SET UP CHARGE PER TENT regardless of number of imprint areas and includes entire quantity with same imprint.</h4>
 
 </template>

@@ -170,15 +170,18 @@ Router.map(function() {
     path: '/adriteeconomyline',
     template: 'adriteeconomyline',
     yieldTemplates: {
-      'charges': {to: 'charges'}
+      'charges': {to: 'charges'},
+      'filterdropdown': {to: 'filterdropdown'}
     }, 
     waitOn: function () {
       return [Meteor.subscribe('adriteeconomyline'),
-              Meteor.subscribe('charges')];
+              Meteor.subscribe('charges'),
+              Meteor.subscribe('adritetags')];
     },
     data: function () {
       return {
         adriteeconomyline: Adriteeconomyline.find(),
+        tags: Adritetags.find(),
         charges: Charges.find()
       }
     }
@@ -188,36 +191,41 @@ Router.map(function() {
     path: '/cloudbuster',
     template: 'cloudbuster',
     yieldTemplates: {
-      'charges': {to: 'charges'}
+      'charges': {to: 'charges'}, 
+      'filterdropdown': {to: 'filterdropdown'} 
     }, 
     waitOn: function () {
       return [Meteor.subscribe('cloudbuster'),
               Meteor.subscribe('cloudbusterkits'),
+              Meteor.subscribe('cloudbustertags'),
               Meteor.subscribe('charges')];
     },
     data: function () {
       return {
         cloudbuster: Cloudbuster.find(),
         cloudbusterkits: Cloudbusterkits.find(),
+        tags: Cloudbustertags.find(),
         charges: Charges.find()
       }
     }
   });
   
-
   this.route('outdoorballoons', {
     path: '/outdoorballoons',
     template: 'outdoorballoons',
     yieldTemplates: {
-      'charges': {to: 'charges'}
+      'charges': {to: 'charges'},
+      'filterdropdown': {to: 'filterdropdown'}
     }, 
     waitOn: function () {
       return [Meteor.subscribe('outdoorballoons'),
-              Meteor.subscribe('charges')];
+              Meteor.subscribe('charges'),
+              Meteor.subscribe('outdoortags')];
     },
     data: function () {
       return {
         outdoorballoons: Outdoorballoons.find(),
+        tags: Outdoortags.find(),
         charges: Charges.find()
       }
     }
@@ -227,35 +235,41 @@ Router.map(function() {
     path: '/microfoilvalved',
     template: 'microfoilvalved1820',
     yieldTemplates: {
-      'smallmicrofoilcharges': {to: 'charges'}
+      'smallmicrofoilcharges': {to: 'charges'},
+      'filterdropdown': {to: 'filterdropdown'}
     }, 
     waitOn: function () {
       return [Meteor.subscribe('microfoilvalved1820'),
               Meteor.subscribe('microfoilvalved36'),
+              Meteor.subscribe('microfoiltags'),
               Meteor.subscribe('charges')];
     },
     data: function () {
       return {
         microfoilvalved1820: Microfoilvalved1820.find(),
         microfoilvalved36: Microfoilvalved36.find(),
+        tags: Microfoiltags.find(),
         charges: Charges.find()
       }
     }
   });
-  
+
   this.route('largequantmicrofoil', {
     path: '/largequantmicrofoil',
     template: 'largequantmicrofoil',
     yieldTemplates: {
-      'charges': {to: 'charges'}
+      'charges': {to: 'charges'},
+      'filterdropdown': {to: 'filterdropdown'}
     }, 
     waitOn: function () {
       return [Meteor.subscribe('largequantmicrofoil'),
-              Meteor.subscribe('charges')];
+              Meteor.subscribe('charges'),
+              Meteor.subscribe('largequanttags')];
     },
     data: function () {
       return {
         largequantmicrofoil: Largequantmicrofoil.find(),
+        tags: Largequanttags.find(),
         charges: Charges.find()
       }
     }
@@ -265,19 +279,23 @@ Router.map(function() {
     path: '/giantlatexballoons',
     template: 'giantlatexballoons',
     yieldTemplates: {
-      'giantlatexcharges': {to: 'charges'}
+      'charges': {to: 'charges'},
+      'filterdropdown': {to: 'filterdropdown'}
     }, 
     waitOn: function () {
       return [Meteor.subscribe('giantlatexballoons'),
-              Meteor.subscribe('charges')];
+              Meteor.subscribe('charges'),
+              Meteor.subscribe('gianttags')];
     },
     data: function () {
       return {
         giantlatexballoons: Giantlatexballoons.find(),
+        tags: Gianttags.find(),
         charges: Charges.find()
       }
     }
   });
+
 
   this.route('charges', {
     path: '/charges',
@@ -292,7 +310,6 @@ Router.map(function() {
     }
   });
 
-  this.route('content');
   this.route('contact');
   // Users
 
@@ -302,16 +319,22 @@ Router.map(function() {
 
   this.route('forgot');
 
+
+ 
   // newroutes
   this.route('eventtents', {
     path: '/eventtents',
     template: 'eventtents',
     waitOn: function () {
-      return Meteor.subscribe('eventtents');
+      return [Meteor.subscribe('eventtents'),
+              Meteor.subscribe('eventtentwalls'),
+              Meteor.subscribe('eventtags')]
     },
     data: function () {
       return {
-        eventtents: Eventtents.find()
+        eventtents: Eventtents.find(),
+        eventtentwalls: Eventtentwalls.find(),
+        tags: Eventtags.find()
       }
     }
   });

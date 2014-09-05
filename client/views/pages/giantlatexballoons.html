@@ -9,6 +9,10 @@
     </div>
 
     <div class="row">
+      {{> yield region='filterdropdown' }}
+    </div>
+
+    <div class="row">
       {{> reactiveTable collection=giantlatexballoons settings=settings}}
     </div>
 

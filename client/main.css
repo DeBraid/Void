@@ -38,9 +38,9 @@ td.Product.Description {
 /* TABLE (REACTIVE TABLE)                                                                        */
 /*********************************************************************************/
 .tableimages {
-  width:36%;
+  width:30%;
   overflow: hidden;
-  max-height: 10em;
+  max-height: 7.5em;
 }
 @media (max-width: 1199px) {
     .tableimages {
@@ -456,4 +456,6 @@ header
 
 #palimg img {
   max-height: 3em;
+  vertical-align: middle;
+  max-width: 80%;
 }

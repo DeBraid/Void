@@ -8,13 +8,16 @@ Global client-side code. Loads last.
 
 
 Template.homepage.rendered = function () {
+    $('#scrollToTop').remove();
     var route = Router.current();
-    if ( route && route.path == '/' || '/contact' ) {
+    if ( route && route.path == '/' ) {
         document.body.className = "showBackgroundImage";
     }
 };
 
 Template.contact.rendered = function () {
+    $('#scrollToTop').remove();
+
     var route = Router.current();
     if ( route && route.path == '/contact' ) {
         document.body.className = "showBackgroundImage";
@@ -50,9 +53,3 @@ Template.reactiveTable.events({
         // console.log(foo);
     }
 });
-
-// Template.reactiveTable.rendered = function () {
-//   Meteor.defer(function  (argument) {
-//     UI.insert( UI.render( Template.filterdropdown ) , $('.reactive-table-filter').get(0) )
-//   })
-// };

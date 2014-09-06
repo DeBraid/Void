@@ -10,11 +10,14 @@ body, html {
 }
 
 h1 {
-  font-weight: 600;
-  font-size: 2em;
-  letter-spacing: 10px;
+  font-weight: 900;
+  font-size: 3em;
+  letter-spacing: 3px;
   color: #252175;
+}
 
+p,li {
+  font-size: 0.8em;
 }
 
 td {
@@ -24,7 +27,7 @@ td {
 
 .productname {
   margin-top: 0;
-  font-size: 1.75em;
+  font-size: 1.05em;
 }
 
 td.Product.Description {
@@ -226,6 +229,10 @@ header
 /*********************************************************************************/
 /* GLOBAL TEXT                                                             */
 /*********************************************************************************/
+#contact-button {
+  font-size: 1.4em;
+}
+
 .contact-text {
   color: #0072bb;
   text-shadow: 0 0 0.5px rgba(255,255,255,0.15);
@@ -237,18 +244,17 @@ header
   padding: 3em 0 3em 0 !important;
 }
 
-#codes, 
-.footer,
+#codes,.footer {
+  color: #0072bb;
+  text-shadow: 0 0 0.5px rgba(255,255,255,0.15);
+  font-size: 0.75em;
+}
+
 #charges {
   color: #0072bb;
   text-shadow: 0 0 0.5px rgba(255,255,255,0.15);
-  font-size: 0.7em;
+  font-size: 1.5em;
 }
-
-/*.form-control:focus, .form-control:focus + span .btn{
-    border-color:#ffdf00;
-    box-shadow:none;
-}*/
 
 .form-control:focus {
   border-color: #ffdf00;
@@ -269,6 +275,12 @@ header
 #mapleleaf img {
   max-width: 3.5em;
   float: right;
+}
+
+li .dropdown,
+.tags, 
+.dropdown a {
+  font-size: 1.25em;
 }
 
 @media (max-width: 1180px) {
@@ -458,4 +470,17 @@ header
   max-height: 3em;
   vertical-align: middle;
   max-width: 80%;
+}
+
+#primary-image {
+  max-height: 12em;
+  overflow: hidden;
+}
+
+#primary-image > img {
+  max-height: 20em;
+}
+
+#scrollToTop {
+
 }

@@ -1,40 +1,46 @@
 <template name="roundballoons">
-  
-  <div class="row">
-    {{> roundheader}}  
-  </div>
-
-
-  <div class="container-fluid">
+  <div class="container">
+    
+    
     <div class="row">
-        
+      {{> roundheader}}  
     </div>
-  </div>
-  
     <div class="row">
       {{> palimg }}
       {{> yield region='filterdropdown' }}
     </div>
-  <div class="row">
-    {{> reactiveTable collection=roundballoons settings=settings}}
+    <div class="row">
+      {{> reactiveTable collection=roundballoons settings=settings}}
+      {{> yield region='charges'}}
+    </div>
+    <div class="row">
+      {{> colourassortment}}
+    </div>
+    
+    {{> rush}}
   </div>
 
-  <div class="row">
-    {{> colourassortment}}
-  </div>
-  {{> rush}}
-
-  <div class="row">
-    {{> yield region='charges'}}
-  </div>
 </template>
 
 
 <template name="roundheader">
-  <h1>Latex One-Colour Print Balloons</h1>
-  {{> biodeg}}
+  <div class="row">
+    <h1>Latex One-Colour Print Balloons</h1>
+  </div>
 
-  <p>The prices below include balloons with a one-colour/one-side same Impress II® print; add additional charges</p>
+  <div class="row">
+    <div id="primary-image" class="col-lg-3 col-md-3 col-sm-12">
+      <img src="Prairie.jpg" alt="">
+    </div>
+    <div class="col-lg-7 col-md-6 col-sm-12">
+      <h4>The prices below include balloons with a one-colour/one-side same Impress II® print; add additional charges</h4>
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-12 pull-right">
+      {{> biodeg}}
+    </div>
+    
+  </div>
+
 
     
 </template> 

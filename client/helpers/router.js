@@ -13,7 +13,6 @@ Router.configure({
   loadingTemplate: 'loading',
   notFoundTemplate: 'notFound',
 });
-
 // Filters
 var filters = {
   clearInputValue: function () {
@@ -31,16 +30,31 @@ Router.onBeforeAction(filters.setBackground);
 // remove text when route changes
 Router.onBeforeAction(filters.clearInputValue);
 
-// Router.onAfterAction(filters.removeExtraButtons)
-
 // Routes
 
 Router.map(function() {
-
-
+  
   this.route('homepage', {
       path: '/'
   });
+
+  this.route('geninfo', {
+    path: '/geninfo',
+    template: 'geninfo',
+    waitOn: function () {
+      return Meteor.subscribe('geninfo');
+    },
+    data: function () {
+      return {
+        geninfo: Geninfo.find()
+      }
+    }
+  });
+
+  this.route('contact');
+  this.route('login');
+  this.route('signup');
+  this.route('forgot');
 
   this.route('latexonecolround', {
     path: '/latexonecolround',
@@ -310,17 +324,6 @@ Router.map(function() {
     }
   });
 
-  this.route('contact');
-  // Users
-
-  this.route('login');
-
-  this.route('signup');
-
-  this.route('forgot');
-
-
- 
   // newroutes
   this.route('eventtents', {
     path: '/eventtents',
@@ -395,19 +398,6 @@ Router.map(function() {
         twocolourballoons: Twocolourballoons.find(),      
         threecolourplus: Threecolourplus.find(),
         charges: Charges.find()
-      }
-    }
-  });
-
-  this.route('geninfo', {
-    path: '/geninfo',
-    template: 'geninfo',
-    waitOn: function () {
-      return Meteor.subscribe('geninfo');
-    },
-    data: function () {
-      return {
-        geninfo: Geninfo.find()
       }
     }
   });

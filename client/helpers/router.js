@@ -328,6 +328,9 @@ Router.map(function() {
   this.route('eventtents', {
     path: '/eventtents',
     template: 'eventtents',
+    yieldTemplates: {
+      'filterdropdown': {to: 'filterdropdown'}
+    },
     waitOn: function () {
       return [Meteor.subscribe('eventtents'),
               Meteor.subscribe('eventtentwalls'),

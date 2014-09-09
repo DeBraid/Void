@@ -18,8 +18,11 @@ Meteor.publish('eventtags', function() {
 Meteor.publish('flagtags', function() {
   return Flagtags.find();
 });
-Meteor.publish('multicolourtags', function() {
-  return Multicolourtags.find();
+Meteor.publish('multitags', function() {
+  return Multitags.find();
+});
+Meteor.publish('admaxtags', function() {
+  return Admaxtags.find();
 });
 
 Meteor.publish('tablecovertags', function() {

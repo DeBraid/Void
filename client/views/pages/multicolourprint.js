@@ -1,22 +1,10 @@
-Template.heartballoons.settings = function () {
-        return {
+Template.threecolourplustable.settings = function () {
+    return {
         showFilter: true,
         showNavigation: 'never',
         fields: [{
                         key: 'Product Description',
-                        label: 'Product -- Price Per Balloon 4ABCD'
-                    },{
-                        key: 'ItemNum',
-                        label: 'Item #'
-                    }, {
-                        key: '250',
-                        label: '250'
-                    }, {
-                        key: '500',
-                        label: '500'
-                    }, {
-                        key: '1000',
-                        label: '1000'
+                        label: 'Product -- Price Per Balloon ABCD'
                     }, {
                         key: '2500',
                         label: '2500'

@@ -7,6 +7,9 @@
 
     <div class="row">
       <h3>Two-Colour Print</h3>
+      {{> yield region='filterdropdown' }}      
+    </div>
+    <div class="row">
       {{> reactiveTable collection=twocolourballoons settings=settings}}
     </div>
 

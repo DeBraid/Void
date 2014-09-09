@@ -16,9 +16,6 @@ h1 {
   color: #252175;
 }
 
-p,li {
-  font-size: 0.8em;
-}
 
 td {
   font-size: 1.25em;
@@ -277,11 +274,6 @@ header
   float: right;
 }
 
-li .dropdown,
-.tags, 
-.dropdown a {
-  font-size: 1.25em;
-}
 
 @media (max-width: 1180px) {
     .navbar-header {

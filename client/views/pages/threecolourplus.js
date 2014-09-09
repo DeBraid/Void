@@ -1,4 +1,4 @@
-Template.threecolourplustable.settings = function () {
+Template.multicolourprint.settings = function () {
     return {
         showFilter: true,
         showNavigation: 'never',

@@ -403,17 +403,20 @@ Router.map(function() {
   this.route('multicolourprint', {
     path: '/multicolourprint',
     template: 'multicolourprint',
+    yieldTemplates: {
+      'filterdropdown': {to: 'filterdropdown'}
+    },
     waitOn: function () {
       return [Meteor.subscribe('twocolourballoons'),
               Meteor.subscribe('threecolourplus'),
-              Meteor.subscribe('multicolourtags'),
+              Meteor.subscribe('multitags'),
               Meteor.subscribe('charges')];
     },
     data: function () {
       return {
         twocolourballoons: Twocolourballoons.find(),      
-        twocolourballoons: Twocolourballoons.find(),      
-        tags: Multicolourtags.find(),
+        threecolourplus: Threecolourplus.find(),      
+        tags: Multitags.find(),
         charges: Charges.find()
       }
     }
@@ -422,12 +425,17 @@ Router.map(function() {
   this.route('admaxminisportballs', {
     path: '/admaxminisportballs',
     template: 'admaxminisportballs',
+    yieldTemplates: {
+      'filterdropdown': {to: 'filterdropdown'}
+    },
     waitOn: function () {
-      return Meteor.subscribe('admaxminisportballs');
+      return [Meteor.subscribe('admaxminisportballs'),
+              Meteor.subscribe('admaxtags')]
     },
     data: function () {
       return {
-        admaxminisportballs: Admaxminisportballs.find()
+        admaxminisportballs: Admaxminisportballs.find(),
+        tags: Admaxtags.find()
       }
     }
   });

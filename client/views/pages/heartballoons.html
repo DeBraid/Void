@@ -12,6 +12,7 @@
     </div>    
     <div class="row">
       {{> reactiveTable collection=heartballoons settings=settings}}
+      {{> yield region='charges'}}
     </div>
     
     <div class="row">
@@ -20,7 +21,7 @@
     {{> rush }}
     
     <div class="row">
-      {{> yield region='charges'}}
+      
     </div>
   </div>  
 
@@ -28,15 +29,26 @@
 
 
 <template name="heartheader">
-  <h1>Heart Balloons</h1>
-  <h4>One Colour-One Side IMPRESS II® Print</h4>
-  {{> biodeg}}
+  <div class="row">
+    <h1>Heart Balloons</h1>
+  </div>
 
-  <p>The prices below include balloons with a one-colour/two-side same Impress II® print; add additional charges</p>
-
-
+  <div class="row">
+    <div id="primary-image" class="col-lg-3 col-md-3 col-sm-12">
+      <img src="Prairie.jpg" alt="">
+    </div>
+    <div class="col-lg-7 col-md-6 col-sm-12">
+      <h4>One Colour-One Side IMPRESS II® Print</h4>
+      <p>The prices below include balloons with a one-colour/two-side same Impress II® print; add additional charges</p>
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-12 pull-right">
+      {{> biodeg}}
+    </div>
     
+  </div>
+
 </template> 
+
 
 <template name="heartcolours">
   <ul>

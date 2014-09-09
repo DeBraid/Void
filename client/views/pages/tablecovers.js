@@ -3,20 +3,10 @@
 Template.nonfitted.settings = function () {
     return {
         showFilter: true,
+        showNavigation: 'never',
         fields: [{
                   key: 'Product Description',
-                  label: 'Product -- Price Per Piece $CAD 4C2D',
-                  fn: function (name, object) {
-
-                    var image = object.PSD.slice(0,-4);
-                      
-                    var html = '<h3 class="productname">' + name + '</h3>' + 
-                            '<div class="thumbnail tableimages">' + 
-                                '<img src="' + image + '.jpg' + '">' + 
-                            '</div>';
-
-                      return new Spacebars.SafeString(html);
-                    }
+                  label: 'Product -- Price Per Piece 4C2D'
                 }, {
                     key: 'Printing',
                     label: 'Printing'
@@ -49,18 +39,7 @@ Template.stretch.settings = function () {
         showNavigation: 'never',
         fields: [{
                   key: 'Product Description',
-                  label: 'Product -- Price Per Piece 4C2D',
-                  fn: function (name, object) {
-
-                    var image = object.PSD.slice(0,-4);
-                      
-                    var html = '<h3 class="productname">' + name + '</h3>' + 
-                            '<div class="thumbnail tableimages">' + 
-                                '<img src="' + image + '.jpg' + '">' + 
-                            '</div>';
-
-                      return new Spacebars.SafeString(html);
-                    }
+                  label: 'Product -- Price Per Piece 4C2D'
                 }, {
                     key: 'ItemNum',
                     label: 'Item #'

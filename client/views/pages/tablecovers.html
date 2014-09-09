@@ -36,25 +36,30 @@
 
 
 <template name="nonfitted">
-    <section>
+   <div class="row">
         <h3>Non-Fitted Table Covers</h3>
-        {{> reactiveTable collection=nonfittedtablecovers settings=settings}}
-    </section>
-
-    <img src="tabelcover.jpg" alt="">
+        <div class="row">
+            {{> filterdropdown }}
+        </div>
+        <div class="row">
+            {{> reactiveTable collection=nonfittedtablecovers settings=settings}}
+        </div>
+    </div>
 </template>
 
 
 <!-- ************************************** -->
 <template name="stretch">
 
-    <section>
+    <div class="row">
         <h3>Stretch Table Covers</h3>
+        <div class="row">
+            {{> reactiveTable collection=stretchtablecovers settings=settings}}
+        </div>
         
-        {{> reactiveTable collection=stretchtablecovers settings=settings}}
-    </section>
+        <p><strong>*</strong> Plain stock colours: White, Black, Red or Blue</p> 
+    </div>
 
-     <p><strong>*</strong> Plain stock colours: White, Black, Red or Blue</p> 
 
 
 </template>

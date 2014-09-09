@@ -348,12 +348,17 @@ Router.map(function() {
   this.route('popupbanners', {
     path: '/popupbanners',
     template: 'popupbanners',
+    yieldTemplates: {
+      'filterdropdown': {to: 'filterdropdown'}
+    },
     waitOn: function () {
-      return Meteor.subscribe('popupbanners');
+      return [Meteor.subscribe('popupbanners'), 
+              Meteor.subscribe('popuptags')];
     },
     data: function () {
       return {
-        popupbanners: Popupbanners.find()
+        popupbanners: Popupbanners.find(),
+        tags: Popuptags.find()
       }
     }
   });
@@ -363,11 +368,13 @@ Router.map(function() {
     template: 'tablecovers',
     waitOn: function () {
       return [Meteor.subscribe('nonfittedtablecovers'),
-              Meteor.subscribe('stretchtablecovers')]
+              Meteor.subscribe('stretchtablecovers'),
+              Meteor.subscribe('tablecovertags')]
     },
     data: function () {
       return {
         nonfittedtablecovers: Nonfittedtablecovers.find(),
+        tags: Tablecovertags.find(),
         stretchtablecovers: Stretchtablecovers.find()
       }
     }
@@ -376,13 +383,18 @@ Router.map(function() {
   this.route('promoflags', {
     path: '/promoflags',
     template: 'promoflags',
+    yieldTemplates: {
+      'filterdropdown': {to: 'filterdropdown'}
+    },
     waitOn: function () {
       return [Meteor.subscribe('promoflags'),
+              Meteor.subscribe('flagtags'),
               Meteor.subscribe('econflags')];
     },
     data: function () {
       return {
         promoflags: Promoflags.find(),      
+        tags: Flagtags.find(),      
         econflags: Econflags.find()      
       }
     }
@@ -394,12 +406,14 @@ Router.map(function() {
     waitOn: function () {
       return [Meteor.subscribe('twocolourballoons'),
               Meteor.subscribe('threecolourplus'),
+              Meteor.subscribe('multicolourtags'),
               Meteor.subscribe('charges')];
     },
     data: function () {
       return {
         twocolourballoons: Twocolourballoons.find(),      
-        threecolourplus: Threecolourplus.find(),
+        twocolourballoons: Twocolourballoons.find(),      
+        tags: Multicolourtags.find(),
         charges: Charges.find()
       }
     }

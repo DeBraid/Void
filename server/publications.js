@@ -15,6 +15,20 @@ Meteor.publish('adwavetags', function() {
 Meteor.publish('eventtags', function() {
   return Eventtags.find();
 });
+Meteor.publish('flagtags', function() {
+  return Flagtags.find();
+});
+Meteor.publish('multicolourtags', function() {
+  return Multicolourtags.find();
+});
+
+Meteor.publish('tablecovertags', function() {
+  return Tablecovertags.find();
+});
+
+Meteor.publish('popuptags', function() {
+  return Popuptags.find();
+});
 Meteor.publish('largequanttags', function() {
   return Largequanttags.find();
 });

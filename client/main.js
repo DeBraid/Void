@@ -8,7 +8,7 @@ Global client-side code. Loads last.
 
 
 Template.homepage.rendered = function () {
-    $('#scrollToTop').remove();
+    $('#scrollToTop').hide();
     var route = Router.current();
     if ( route && route.path == '/' ) {
         document.body.className = "showBackgroundImage";
@@ -16,7 +16,7 @@ Template.homepage.rendered = function () {
 };
 
 Template.contact.rendered = function () {
-    $('#scrollToTop').remove();
+    $('#scrollToTop').hide();
 
     var route = Router.current();
     if ( route && route.path == '/contact' ) {
@@ -33,7 +33,7 @@ Template.footer.rendered = function () {
 
 // pop up when user clicks images
 Template.reactiveTable.events({
-  'click .tableimages': function(e,t) {
+  'click .Product.Description': function(e,t) {
         e.preventDefault();
         $('.modal').modal();
 

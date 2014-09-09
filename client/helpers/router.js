@@ -22,16 +22,17 @@ var filters = {
   },
   setBackground: function () {
     document.body.className = "noBackgroundImage"
+  }, 
+  showScrollToTopButton: function () {
+    $('#scrollToTop').show();
   }
 }
 
 Router.onBeforeAction(filters.setBackground);
-
-// remove text when route changes
 Router.onBeforeAction(filters.clearInputValue);
+Router.onAfterAction(filters.showScrollToTopButton);
 
 // Routes
-
 Router.map(function() {
   
   this.route('homepage', {
@@ -205,21 +206,18 @@ Router.map(function() {
     path: '/cloudbuster',
     template: 'cloudbuster',
     yieldTemplates: {
-      'charges': {to: 'charges'}, 
       'filterdropdown': {to: 'filterdropdown'} 
     }, 
     waitOn: function () {
       return [Meteor.subscribe('cloudbuster'),
               Meteor.subscribe('cloudbusterkits'),
-              Meteor.subscribe('cloudbustertags'),
-              Meteor.subscribe('charges')];
+              Meteor.subscribe('cloudbustertags')];
     },
     data: function () {
       return {
         cloudbuster: Cloudbuster.find(),
         cloudbusterkits: Cloudbusterkits.find(),
-        tags: Cloudbustertags.find(),
-        charges: Charges.find()
+        tags: Cloudbustertags.find()
       }
     }
   });
@@ -228,7 +226,7 @@ Router.map(function() {
     path: '/outdoorballoons',
     template: 'outdoorballoons',
     yieldTemplates: {
-      'charges': {to: 'charges'},
+      'outdoorcharges': {to: 'charges'},
       'filterdropdown': {to: 'filterdropdown'}
     }, 
     waitOn: function () {

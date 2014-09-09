@@ -3,10 +3,7 @@
   <div class="container">
 
     <div class="row">
-      <h1>AdWave® Balloons</h1>
-      {{> biodeg}}
-      <h4>One Colour - One Side Print.  Available in Two Sizes!</h4>
-
+      {{> adwaveheader }}
     </div>
     
     <div class="row">
@@ -15,18 +12,39 @@
     <div class="row">
       {{> reactiveTable collection=adwave settings=settings}}  
     </div>
+    <div id="charges" class="row">
+      {{> adwavecharges }}
+    </div>
 
     <div class="row">
       {{> adwavecolours}}
       {{> adwaveinfo}}
     </div>
 
-    <div class="row">
-      {{> adwavecharges }}
-    </div>
   </div>
 
 </template>
+
+
+<template name="adwaveheader">
+  <div class="row">
+    <h1>AdWave® Balloons</h1>
+  </div>
+
+  <div class="row">
+    <div id="primary-image" class="col-lg-3 col-md-3 col-sm-12">
+      <img src="Adwaves2014.jpg" alt="">
+    </div>
+    <div class="col-lg-7 col-md-6 col-sm-12">
+          <h4>One Colour - One Side Print.  Available in Two Sizes!</h4>
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-12 pull-right">
+      {{> biodeg}}
+    </div>
+    
+  </div>
+
+</template> 
 
 <template name="adwavecolours">
   <h4>AdWave balloons are available only in selected colours:</h4>  

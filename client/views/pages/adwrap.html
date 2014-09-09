@@ -12,14 +12,15 @@
     <div class="row">
       {{> reactiveTable collection=adwrap settings=settings}}
     </div>
+    
+    <div id="charges" class="row">
+      {{> adwrapcharges}}
+    </div>
 
     <div class="row">
       {{> adwrapfooter}}
     </div>
 
-    <div class="row">
-      {{> adwrapcharges}}
-    </div>
 
   </div>
   
@@ -27,15 +28,26 @@
 </template>
 
 <template name="adwrapheader">
+  <div class="row">
     <h1> AdWrap® Balloons</h1>
-    {{> biodeg }}
-    <h4>One-Colour/Wrap around IMPRESS II® Print</h4>
+  </div>
 
-    <p>AdWrap balloons increase your message visibility and are ideal for a wide range of promotions.  Your logo or message, surrounded by one of the stock designs, appears four times on the balloon to create a custom image.</p>
+  <div class="row">
+    <div id="primary-image" class="col-lg-3 col-md-3 col-sm-12">
+      <img src="AdWrapStockAware.jpg" alt="">
+    </div>
+    <div class="col-lg-7 col-md-6 col-sm-12">
+          <h4>One-Colour/Wrap around IMPRESS II® Print</h4>
+          <h4>AdWrap balloons increase your message visibility and are ideal for a wide range of promotions.  Your logo or message, surrounded by one of the stock designs, appears four times on the balloon to create a custom image.</h4>
 
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-12 pull-right">
+      {{> biodeg}}
+    </div>
+    
+  </div>
 
-  
-</template>
+</template> 
 
 <template name="adwrapfooter">
     

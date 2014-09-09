@@ -2,10 +2,7 @@
   
   <div class="container">
     <div class="row">
-      <h1>Giant Latex Balloons</h1>
-      {{> biodeg}}
-      <h4>One Colour - One Side Imprint</h4>
-
+      {{> giantlatexheader}}
     </div>
 
     <div class="row">
@@ -15,17 +12,37 @@
     <div class="row">
       {{> reactiveTable collection=giantlatexballoons settings=settings}}
     </div>
+    <div id="charges" class="row">
+      {{> giantlatexcharges}}
+    </div>
 
     <div class="row">
       <p><strong>*SuperAgate Rainbow Colours include:</strong>  Blue Rainbow (L6A), Green Rainbow (L6B), Red Orange Rainbow (L6C), Yellow Orange Rainbow (L6D), and Pink Violet Rainbow (L6E)</p>
     </div>
     
-    <div class="row">
-      {{> yield region='charges'}}
-    </div>
   </div>
   
 </template>
+
+<template name="giantlatexheader">
+  <div class="row">
+    <h1>Giant Latex Balloons</h1>
+  </div>
+
+  <div class="row">
+    <div id="primary-image" class="col-lg-3 col-md-3 col-sm-12">
+      <img src="giantballoons.jpg" alt="">
+    </div>
+    <div class="col-lg-7 col-md-6 col-sm-12">
+      <h4>One Colour - One Side Imprint</h4>
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-12 pull-right">
+      {{> biodeg}}
+    </div>
+    
+  </div>
+
+</template> 
 
 
 <template name="giantlatexcharges">

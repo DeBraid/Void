@@ -4,18 +4,7 @@ Template.largequantmicrofoil.settings = function () {
         showNavigation: 'never',
         fields: [{
                   key: 'Product Description',
-                  label: 'Product -- Price per Balloon $CAD CDEF',
-                  fn: function (name, object) {
-
-                      var image = object.PSD.slice(0,-4);
-                      
-                      var html = '<h3 class="productname">' + name + '</h3>' + 
-                            '<div class="thumbnail tableimages">' + 
-                                '<img src="' + image + '.jpg' + '">' + 
-                            '</div>';
-
-                      return new Spacebars.SafeString(html);
-                    }
+                  label: 'Product -- Price per Balloon CDEF'
                 }, {
                     key: 'Printing',  
                     label: 'Printing'

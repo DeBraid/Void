@@ -17,8 +17,7 @@
 
 
 <template name="promoflagscontent">
-  <h1>Promotional Flags</h1>
-    <h4>Prices below include flags with same design one-side digital imprint with mirror image on second side</h4>
+    {{> promoheader }}
 
     <h3>Promotional Bow Flags </h3>
 
@@ -38,6 +37,23 @@
       <li><strong>Extra Ground Stake (# 31180) $27.50 each.</strong>  Equipped with Rotating Ball Bearing Stem</li>
     </ul>
 </template>
+
+<template name="promoheader">
+  <div class="row">
+    <h1>Promotional Flags</h1>
+  </div>
+
+  <div class="row">
+    <div id="primary-image" class="col-lg-3 col-md-3 col-sm-12">
+      <img src="flagsredone.jpg" alt="">
+    </div>
+    <div class="col-lg-7 col-md-6 col-sm-12">
+      <h4>Prices below include flags with same design one-side digital imprint with mirror image on second side</h4>
+    </div>
+    
+  </div>
+
+</template> 
 
 <template name="econflags">
   <h1>Economy Flags</h1> 

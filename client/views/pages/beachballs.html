@@ -1,24 +1,20 @@
 <template name="beachballs">
   <div class="container">
     <div class="row">
-      <h1>Beach Balls</h1> 
-
-      <h4>Made of high-quality, heavy gauge vinyl</h4>
-
-      <p>The prices below include balls with one-colour / one-panel imprint; add additional charges.</p>
+      {{> beachballheader}}
     </div>
 
     <div class="row">
       {{> reactiveTable collection=beachballs settings=settings }}  
     </div>
   </div>
-
-
-  <ul>
-    <li><strong>Cut Charge:</strong>  $50.00(A) per logo, one time only.</li>
-    <li><strong>Custom Ink </strong>Blend:  $50.00(A) per ink colour; custom blends are not inventoried.**Exact PMS matches cannot be guaranteed**  </li>
-    <li><strong>Art Charge:</strong>  $50.00(A) per hour.</li>
-  </ul>
+  <div id="charges" class="row">
+    <ul>
+      <li><strong>Cut Charge:</strong>  $50.00(A) per logo, one time only.</li>
+      <li><strong>Custom Ink </strong>Blend:  $50.00(A) per ink colour; custom blends are not inventoried.**Exact PMS matches cannot be guaranteed**  </li>
+      <li><strong>Art Charge:</strong>  $50.00(A) per hour.</li>
+    </ul>
+  </div>
 
   <div class="row">    
 
@@ -31,3 +27,20 @@
   </div>
 
 </template>
+
+<template name="beachballheader">
+  <div class="row">
+    <h1>Beach Balls</h1> 
+  </div>
+
+  <div class="row">
+    <div id="primary-image" class="col-lg-3 col-md-3 col-sm-12">
+      <img src="16inchbeachball.jpg" alt="">
+    </div>
+    <div class="col-lg-7 col-md-6 col-sm-12">
+      <h4>Made of high-quality, heavy gauge vinyl.  The prices below include balls with one-colour / one-panel imprint; add additional charges.</h4>
+    </div>
+    
+  </div>
+
+</template> 

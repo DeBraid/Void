@@ -7,7 +7,7 @@ Template.microfoilvalved36.settings = function () {
                   label: 'Product -- Price Per Balloon 4AB'
                 }, {
                     key: 'Number of Colours', 
-                    label: '# of Colours'
+                    label: '# of Ink Colours'
                 }, {
                     key: '10',
                     label: '10'

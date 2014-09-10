@@ -3,16 +3,18 @@
     
     <div class="row">
       {{> largequantheader }}
+      
     </div>
 
     <div class="row">
       {{> yield region='filterdropdown' }}
     </div>
     <div class="row">
+      <h4>18" and 20" Valved Balloons Flexographic Printing</h4> 
       {{> reactiveTable collection=largequantmicrofoil settings=settings}}
     </div>
 
-    <div class="row">
+    <div id="charges" class="row">
       {{> largequantfooter }}
    </div>
     
@@ -25,12 +27,23 @@
 </template>
 
 <template name="largequantheader">
-    <h1>Large Quantity Microfoil® Balloons</h1>
-    <h4>18" and 20" Valved Balloons Flexographic Printing</h4> 
-    <p><strong>Screen Printing:</strong> Prices include valved balloons with one-side screen imprint; additional charges may apply.  Silver/Silver.</p>
     
+  <div class="row">
+    <h1>Large Quantity Microfoil® Balloons</h1>
+  </div>
 
-</template>
+  <div class="row">
+    <div id="primary-image" class="col-lg-3 col-md-3 col-sm-12">
+      <img src="lgqtymicrofoil.jpg" alt="">
+    </div>
+    <div class="col-lg-7 col-md-6 col-sm-12">
+      
+    <h4><strong>Screen Printing:</strong> Prices include valved balloons with one-side screen imprint; additional charges may apply.  Silver/Silver.</h4>
+    </div>
+    
+  </div>
+
+</template> 
 
 <template name="microshapes">
   <h4>Microfoil® Balloons Special Shapes</h4>

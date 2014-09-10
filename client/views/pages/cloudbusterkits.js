@@ -4,18 +4,7 @@ Template.cloudbusterkits.settings = function () {
         showNavigation: 'never',
         fields: [{
                   key: 'Product Description',
-                  label: 'Product -- Price Per Kit $CAD ABCD',
-                  fn: function (name, object) {
-
-                      var image = object.PSD.slice(0,-4);
-                      
-                      var html = '<h3 class="productname">' + name + '</h3>' + 
-                            '<div class="thumbnail tableimages">' + 
-                                '<img src="' + image + '.jpg' + '">' + 
-                            '</div>';
-
-                      return new Spacebars.SafeString(html);
-                    }
+                  label: 'Product -- Price Per Kit ABCD'
                 }, {
                     key: 'Colours',
                     label: 'Colours'

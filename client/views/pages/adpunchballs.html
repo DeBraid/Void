@@ -1,19 +1,12 @@
 <template name="adpunchballs">
     <div class="container">
         <div class="row">
-            <h1>AdPunch™ Balls</h1> 
-            {{> biodeg }}
-            <h4>Made in Canada from 100% natural, biodegradable latex.</h4>
-
-            <p>The prices below include AdPunch balls with one-colour/one-side print; add additional charges. Cut Charge: $50.00(A) per logo, one time only. Machine Set up charge: $22.00(A) per order Second-Side Same Imprint: $.024(A) per balloon Second-Side Different Imprint: $.048(A) per balloon Custom Ink Blend: $20.00(A) per ink colour; custom blends are not inventoried. Art Charge: $50.00(A) per hour.</p>
-
+            {{> adpunchheader }}
         </div>
 
         <div class="row">
             {{> reactiveTable collection=adpunchballs settings=settings }}
         </div>
-
-
 
         <ul>
             <li><strong>Ball Colours:</strong> White (101), Red (102), Blue (149), Orange (107), Kiwi Lime (158) Yellow (105), Pink (106) and Lilac (121). Choose up to four single colours per 100 AdPunch balls.</li>
@@ -28,3 +21,24 @@
     </div>
 
 </template>
+
+<template name="adpunchheader">
+  <div class="row">
+    <h1>AdPunch™ Balls</h1> 
+    <h4>Made in Canada from 100% natural, biodegradable latex.</h4>
+  </div>
+
+  <div class="row">
+    <div id="primary-image" class="col-lg-3 col-md-3 col-sm-12">
+      <img src="adpunchballs.jpg" alt="">
+    </div>
+    <div class="col-lg-7 col-md-6 col-sm-12">
+      <p>The prices below include AdPunch balls with one-colour/one-side print; add additional charges. Cut Charge: $50.00(A) per logo, one time only. Machine Set up charge: $22.00(A) per order Second-Side Same Imprint: $.024(A) per balloon Second-Side Different Imprint: $.048(A) per balloon Custom Ink Blend: $20.00(A) per ink colour; custom blends are not inventoried. Art Charge: $50.00(A) per hour.</p>
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-12 pull-right">
+      {{> biodeg}}
+    </div>
+    
+  </div>
+
+</template> 

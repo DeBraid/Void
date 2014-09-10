@@ -1,12 +1,9 @@
 <template name="outdoorballoons">
   <div class="container">
     <div class="row">
-    <h1>17” Outdoor Display Balloons</h1>
+      {{> outdoorheader }}
+    </div>
 
-    <p>17” Outdoor Display Balloons are manufactured to professional standards and engineered for outdoor use. The thick-wall design provides a flying time of 35-50 hours depending on atmospheric conditions.</p>
-
-    
-  </div>
   <div class="row">
     {{> yield region='filterdropdown' }}
   </div>
@@ -15,12 +12,30 @@
   </div>
 
   <div id="charges"  class="row">
-    {{> yield region='charges'}}
+    {{> outdoorcharges }}
   </div>
   
   </div>
   
 </template>
+
+<template name="outdoorheader">
+  <div class="row">
+    <h1>17” Outdoor Display Balloons</h1>
+  </div>
+
+  <div class="row">
+    <div id="primary-image" class="col-lg-3 col-md-3 col-sm-12">
+      <img src="outdoorpal.jpg" alt="">
+    </div>
+    <div class="col-lg-7 col-md-6 col-sm-12">
+      <h4>17” Outdoor Display Balloons are manufactured to professional standards and engineered for outdoor use. The thick-wall design provides a flying time of 35-50 hours depending on atmospheric conditions.</h4>
+    </div>
+    
+  </div>
+
+</template> 
+
 
 <template name="outdoorcharges">
 

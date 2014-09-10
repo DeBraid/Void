@@ -3,6 +3,7 @@
 
     <div class="row">
       {{> microheader }}
+      <h3>18” and 20” Valved Balloons</h3>
     </div>
 
     <div class="row">
@@ -22,15 +23,25 @@
     </div>
     
     <div id="charges" class="row">      
-      {{> yield region='charges'}}
+      {{> smallmicrofoilcharges }}
     </div>
   </div>
 </template>
 
 <template name="microheader">
-  <h1>Small Quantity Microfoil® Balloons</h1>
-  <h3>18” and 20” Valved Balloons</h3>
-  <p><strong>Screen Printing:</strong> Prices include valved balloons with one-side screen imprint; additional charges may apply.  One-Side Print.</p>
+  <div class="row">
+    <h1>Small Quantity Microfoil® Balloons</h1>
+  </div>
+
+  <div class="row">
+    <div id="primary-image" class="col-lg-3 col-md-3 col-sm-12">
+      <img src="smallmicrocropped.png" alt="">
+    </div>
+    <div class="col-lg-7 col-md-6 col-sm-12">
+      <h4><strong>Screen Printing:</strong> Prices include valved balloons with one-side screen imprint; additional charges may apply.  One-Side Print.</h4>
+    </div>
+    
+  </div>
 
 </template> 
 

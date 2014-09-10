@@ -32,24 +32,21 @@ Template.footer.rendered = function () {
 };
 
 // pop up when user clicks images
-Template.reactiveTable.events({
-  'click .Product.Description': function(e,t) {
+Template.layout.events({
+  'click #primary-image': function(e,t) {
         e.preventDefault();
         $('.modal').modal();
 
         _this = $(e.target);
         myImage = _this.attr('src');
-        myText = _this.parent().siblings('h3').html();
 
+        myText = t.find('h1').textContent;
+        
         var newTitle = $('.modal-title');
         var newModal = $('.modal-body > div');
 
         newTitle.text('' + myText + '');
         newModal.html('<div class="col-lg-12"><img id="modalImage" src="'+ myImage + '" /></div>');
         
-    }, 
-    'keyup .reactive-table-input': function (argument) {
-        // var foo = $('table > tbody > tr:nth-child(1) > td.Product.Description > div > img').attr('src');
-        // console.log(foo);
     }
 });

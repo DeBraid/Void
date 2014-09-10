@@ -465,6 +465,7 @@ header
 }
 
 #primary-image {
+  cursor: pointer;
   max-height: 12em;
   overflow: hidden;
 }

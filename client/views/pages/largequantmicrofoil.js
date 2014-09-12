@@ -1,10 +1,12 @@
 Template.largequantmicrofoil.settings = function () {
     return {
         showFilter: true,
+        rowsPerPage: 25,
         showNavigation: 'never',
         fields: [{
                   key: 'Product Description',
-                  label: 'Product -- Price per Balloon CDEF'
+                  label: 'Product -- Price per Balloon CDEF',
+                  sort: 'ascending'
                 }, {
                     key: 'Printing',  
                     label: 'Printing'

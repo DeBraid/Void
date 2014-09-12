@@ -4,8 +4,7 @@ Template.roundballoons.settings = function () {
         showNavigation: 'never',
         fields: [{
                     key: 'Product Description',
-                    label: 'Product -- Price Per Balloon 4ABCD',
-                    sort: 'descending'
+                    label: 'Product -- Price Per Balloon 4ABCD'
                 }, {
                     key: '250',
                     label: '250'

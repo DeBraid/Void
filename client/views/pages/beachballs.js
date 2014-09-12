@@ -4,7 +4,8 @@ Template.beachballs.settings = function () {
         showNavigation: 'never',
         fields: [{
                   key: 'Product Description',
-                  label: 'Product -- Price Per Ball 2ABC'
+                  label: 'Product -- Price Per Ball 2ABC',
+                  sort: 'ascending'
                 }, {
                     key: '100',
                     label: '100'

@@ -33,7 +33,7 @@ Template.footer.rendered = function () {
 
 // pop up when user clicks images
 Template.layout.events({
-  'click #primary-image': function(e,t) {
+  'click #primary-image img': function(e,t) {
         e.preventDefault();
         $('.modal').modal();
 

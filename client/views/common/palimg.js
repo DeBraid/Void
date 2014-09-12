@@ -95,3 +95,29 @@ Template.adritepalsdropdown.helpers({
     ]
   }
 });
+
+Template.cloudbusterpalsdropdown.helpers({
+  cloudbusterPals: function () {
+    return [
+      { src: 'cloudbusterpal.jpg' , desc : 'Cloudbuster' }
+    ]
+  }
+});
+
+Template.qualatexpalsdropdown.helpers({
+  qualatexPals: function () {
+      return [
+        { src: 'superagatepal.jpg' , desc : 'Super Agate' },
+        { src: 'qlstandardpal.jpg' , desc : 'QuickLink Standard' },
+        { src: 'qljewelpal.jpg' , desc : 'QuickLink Jewel' },
+        { src: 'qlfashionpal.jpg' , desc : 'QuickLink Fashion' },
+        { src: 'neonpal.jpg' , desc : 'Neon' },
+        { src: 'metallicpal.jpg' , desc : 'Mettallic' },
+        { src: 'standardpal.jpg' , desc : 'Standard' },
+        { src: 'pearlpastelpal.jpg' , desc : 'Pastel Pearl' },
+        { src: 'pearlradiantpal.jpg' , desc : 'Radiant Pearl' },
+        { src: 'jewelpal.jpg' , desc : 'Jewel' },
+        { src: 'fashionpal.jpg' , desc : 'Fashion' }
+      ]
+  }
+});

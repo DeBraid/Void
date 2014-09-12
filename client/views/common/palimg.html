@@ -5,7 +5,9 @@
           Select Colour Palette <span class="caret"></span>
       </button>
       <ul id="colour-palette" class="dropdown-menu" role="menu"> 
-        {{> outdoorpalsdropdown }}
+        {{> qualatexpalsdropdown }}
+        <!-- {{> cloudbusterpalsdropdown }} -->
+        <!-- {{> outdoorpalsdropdown }} -->
         <!-- {{> adritepalsdropdown }} -->
       
         <li class="divider"></li>
@@ -14,6 +16,14 @@
       </ul>
     </div>
   </div>
+</template>
+
+
+<template name="qualatexpalsdropdown">
+        {{#each qualatexPals }}
+          <li><a id="{{ desc }}" href="#">{{ desc }}</a>
+          <img class="srcs thumbnails" src="{{ src }}" alt="{{ desc }}"></li>
+        {{/each }} 
 </template>
 
 <template name="outdoorpalsdropdown">
@@ -25,6 +35,13 @@
 
 <template name="adritepalsdropdown">
         {{#each adritePals }}
+          <li><a id="{{ desc }}" href="#">{{ desc }}</a>
+          <img class="srcs thumbnails" src="{{ src }}" alt="{{ desc }}"></li>
+        {{/each }} 
+</template>
+
+<template name="cloudbusterpalsdropdown">
+        {{#each cloudbusterPals }}
           <li><a id="{{ desc }}" href="#">{{ desc }}</a>
           <img class="srcs thumbnails" src="{{ src }}" alt="{{ desc }}"></li>
         {{/each }} 

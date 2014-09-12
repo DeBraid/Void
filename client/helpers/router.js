@@ -57,29 +57,12 @@ Router.map(function() {
   this.route('signup');
   this.route('forgot');
 
-  this.route('latexonecolround', {
-    path: '/latexonecolround',
-    template: 'latexonecolround',
-    yieldTemplates: {
-      'charges': {to: 'charges'}
-    }, 
-    waitOn: function () {
-      return [Meteor.subscribe('latexonecolround'),
-              Meteor.subscribe('charges')];
-    },
-    data: function () {
-      return {
-        latexonecolround: Latexonecolround.find(),
-        charges: Charges.find()
-      }
-    }
-  });
-
   this.route('roundballoons', {
     path: '/roundballoons',
     template: 'roundballoons',
     yieldTemplates: {
       'charges': {to: 'charges'},
+      'palimg': {to: 'palimg'},
       'filterdropdown': {to: 'filterdropdown'}
     }, 
     waitOn: function () {

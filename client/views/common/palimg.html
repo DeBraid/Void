@@ -5,7 +5,12 @@
           Select Colour Palette <span class="caret"></span>
       </button>
       <ul id="colour-palette" class="dropdown-menu" role="menu"> 
-        {{> qualatexpalsdropdown }}
+         {{#each adritePals }}
+            <li><a id="{{ desc }}" href="#">{{ desc }}</a>
+            <img class="srcs thumbnails" src="{{ src }}" alt="{{ desc }}"></li>
+          {{/each }} 
+
+        <!-- {{> qualatexpalsdropdown }} -->
         <!-- {{> cloudbusterpalsdropdown }} -->
         <!-- {{> outdoorpalsdropdown }} -->
         <!-- {{> adritepalsdropdown }} -->
@@ -21,6 +26,13 @@
 
 <template name="qualatexpalsdropdown">
         {{#each qualatexPals }}
+          <li><a id="{{ desc }}" href="#">{{ desc }}</a>
+          <img class="srcs thumbnails" src="{{ src }}" alt="{{ desc }}"></li>
+        {{/each }} 
+</template>
+
+<template name="microfoilpalsdropdown">
+        {{#each microfoilPals }}
           <li><a id="{{ desc }}" href="#">{{ desc }}</a>
           <img class="srcs thumbnails" src="{{ src }}" alt="{{ desc }}"></li>
         {{/each }} 

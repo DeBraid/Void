@@ -12,6 +12,9 @@ Meteor.publish('qlpals', function() {
 Meteor.publish('admaxpals', function() {
   return Admaxpals.find();
 });
+Meteor.publish('microfoilpals', function() {
+  return Microfoilpals.find();
+});
 
 Meteor.publish('cloudpals', function() {
   return Cloudpals.find();

@@ -250,12 +250,14 @@ Router.map(function() {
       return [Meteor.subscribe('microfoilvalved1820'),
               Meteor.subscribe('microfoilvalved36'),
               Meteor.subscribe('microfoiltags'),
+              Meteor.subscribe('microfoilpals'),
               Meteor.subscribe('charges')];
     },
     data: function () {
       return {
         microfoilvalved1820: Microfoilvalved1820.find(),
         microfoilvalved36: Microfoilvalved36.find(),
+        pals: Microfoilpals.find(),
         tags: Microfoiltags.find(),
         charges: Charges.find()
       }
@@ -272,11 +274,13 @@ Router.map(function() {
     waitOn: function () {
       return [Meteor.subscribe('largequantmicrofoil'),
               Meteor.subscribe('charges'),
-              Meteor.subscribe('largequanttags')];
+              Meteor.subscribe('largequanttags'),
+              Meteor.subscribe('microfoilpals')];
     },
     data: function () {
       return {
         largequantmicrofoil: Largequantmicrofoil.find(),
+        pals: Microfoilpals.find(),
         tags: Largequanttags.find(),
         charges: Charges.find()
       }

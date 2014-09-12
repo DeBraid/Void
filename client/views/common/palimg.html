@@ -1,31 +1,35 @@
 <template name="palimg">
   <div id="palimg">
-            <div class="btn-group pull-left">
-            <button type="button" id="main-select-button" class="btn btn-success btn-lg dropdown-toggle pull-right" data-toggle="dropdown">
-                Select Colour Palette <span class="caret"></span>
-            </button>
-            <ul id="colour-palette" class="dropdown-menu" role="menu">
-
-                
-                  {{#each colourPals }}
-                    <li><a id="{{ desc }}" href="#">{{ desc }}: src {{ src }}</a>
-                    <img class="srcs thumbnails" src="{{ src }}" alt="{{ desc }}"></li>
-                  {{/each }} 
-                
-                <li class="divider"></li>
-                <li class="pull-right"><a id="close" href="#">Close</a>
-                </li>
-            </ul>
-        
-       <!--  <div class="row">
-          {{#each colourPals }}
-        <h3>{{ desc }}</h3>
-          <img class="thumbnails" src="{{ src }}" alt="">
-        {{/each}}
-        </div> -->
-
+    <div class="btn-group pull-left">
+      <button type="button" id="main-select-button" class="btn btn-success btn-lg dropdown-toggle pull-right" data-toggle="dropdown">
+          Select Colour Palette <span class="caret"></span>
+      </button>
+      <ul id="colour-palette" class="dropdown-menu" role="menu"> 
+        {{> outdoorpalsdropdown }}
+        <!-- {{> adritepalsdropdown }} -->
+      
+        <li class="divider"></li>
+        <li class="pull-right"><a id="close" href="#">Close</a>
+        </li>
+      </ul>
     </div>
   </div>
 </template>
+
+<template name="outdoorpalsdropdown">
+        {{#each outdoorPals }}
+          <li><a id="{{ desc }}" href="#">{{ desc }}</a>
+          <img class="srcs thumbnails" src="{{ src }}" alt="{{ desc }}"></li>
+        {{/each }} 
+</template>
+
+<template name="adritepalsdropdown">
+        {{#each adritePals }}
+          <li><a id="{{ desc }}" href="#">{{ desc }}</a>
+          <img class="srcs thumbnails" src="{{ src }}" alt="{{ desc }}"></li>
+        {{/each }} 
+</template>
+
+
 
 

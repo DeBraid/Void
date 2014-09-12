@@ -33,7 +33,7 @@ Template.footer.rendered = function () {
 
 // pop up when user clicks images
 Template.layout.events({
-  'click #primary-image img': function(e,t) {
+    'click #primary-image img': function(e,t) {
         e.preventDefault();
         $('.modal').modal();
 
@@ -46,6 +46,24 @@ Template.layout.events({
         var newModal = $('.modal-body > div');
 
         newTitle.text('' + myText + '');
+        newModal.html('<div class="col-lg-12"><img id="modalImage" src="'+ myImage + '" /></div>');
+        
+    },
+    'click .srcs': function (e,t) {
+        e.preventDefault();
+        $('.modal').modal();
+
+        _this = $(e.target);
+        myImage = _this.attr('src');
+
+        sectionHeadline = t.find('h1').textContent;
+        myText = _this.siblings('a').text();
+        console.log('myText', myText);
+        
+        var newTitle = $('.modal-title');
+        var newModal = $('.modal-body > div');
+
+        newTitle.text('' + sectionHeadline + ' -- ' + myText + '');
         newModal.html('<div class="col-lg-12"><img id="modalImage" src="'+ myImage + '" /></div>');
         
     }

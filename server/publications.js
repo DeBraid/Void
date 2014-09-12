@@ -6,12 +6,31 @@ All publications-related code.
 
 /+ ---------------------------------------------------- */
 
-Meteor.publish('tags', function() {
-  return Tags.find();
-});
-
 Meteor.publish('qlpals', function() {
   return Qlpals.find();
+});
+Meteor.publish('admaxpals', function() {
+  return Admaxpals.find();
+});
+
+Meteor.publish('cloudpals', function() {
+  return Cloudpals.find();
+});
+Meteor.publish('adwpals', function() {
+  return Adwpals.find();
+});
+Meteor.publish('qualatexpals', function() {
+  return Qualatexpals.find();
+});
+Meteor.publish('adritepals', function() {
+  return Adritepals.find();
+});
+Meteor.publish('outdoorpals', function() {
+  return Outdoorpals.find();
+});
+
+Meteor.publish('tags', function() {
+  return Tags.find();
 });
 Meteor.publish('adwavetags', function() {
   return Adwavetags.find();

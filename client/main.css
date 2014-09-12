@@ -473,3 +473,7 @@ header
   max-height: 20em;
   cursor: pointer;
 }
+
+.srcs {
+  cursor: pointer;
+}

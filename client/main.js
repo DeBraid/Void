@@ -55,10 +55,9 @@ Template.layout.events({
 
         _this = $(e.target);
         myImage = _this.attr('src');
+        myText = _this.attr('alt');
 
         sectionHeadline = t.find('h1').textContent;
-        myText = _this.siblings('a').text();
-        console.log('myText', myText);
         
         var newTitle = $('.modal-title');
         var newModal = $('.modal-body > div');

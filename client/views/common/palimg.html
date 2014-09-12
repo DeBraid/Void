@@ -6,8 +6,12 @@
       </button>
       <ul id="colour-palette" class="dropdown-menu" role="menu"> 
          {{#each pals }}
-            <li><a id="{{ desc }}" href="#">{{ desc }}</a>
-            <img class="srcs thumbnails" src="{{ src }}" alt="{{ desc }}"></li>
+            <li id="{{ desc }}">
+
+              <h5>{{ desc }}</h5>
+              <img class="srcs thumbnails" src="{{ src }}" alt="{{ desc }}">
+
+            </li>
           {{/each }} 
       
         <li class="divider"></li>

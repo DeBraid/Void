@@ -67,7 +67,7 @@ Router.map(function() {
     waitOn: function () {
       return [Meteor.subscribe('roundballoons'),
               Meteor.subscribe('charges'),
-              Meteor.subscribe('qlpals'),
+              Meteor.subscribe('qualatexpals'),
               Meteor.subscribe('tags')];
     },
     data: function () {
@@ -75,7 +75,7 @@ Router.map(function() {
         roundballoons: Roundballoons.find(),
         charges: Charges.find(), 
         tags: Tags.find(),
-        pals: Qlpals.find()
+        pals: Qualatexpals.find()
       }
     }
   });
@@ -111,11 +111,13 @@ Router.map(function() {
     waitOn: function () {
       return [Meteor.subscribe('quicklinkonecolour'),
               Meteor.subscribe('charges'),
+              Meteor.subscribe('qlpals'),
               Meteor.subscribe('qltags')];
     },
     data: function () {
       return {
         quicklinkonecolour: Quicklinkonecolour.find(),
+        pals: Qlpals.find(),
         tags: Qltags.find(),
         charges: Charges.find()
       }
@@ -131,6 +133,7 @@ Router.map(function() {
     }, 
     waitOn: function () {
       return [Meteor.subscribe('adwave'),
+              Meteor.subscribe('adwpals'),
               Meteor.subscribe('charges'),
               Meteor.subscribe('adwavetags')];
     },
@@ -138,6 +141,7 @@ Router.map(function() {
       return {
         adwave: Adwave.find(),
         tags: Adwavetags.find(),
+        pals: Adwpals.find(),
         charges: Charges.find()
       }
     }
@@ -154,12 +158,14 @@ Router.map(function() {
     waitOn: function () {
       return [Meteor.subscribe('adwrap'),
               Meteor.subscribe('charges'),
+              Meteor.subscribe('adwpals'),
               Meteor.subscribe('qltags')];
     },
     data: function () {
       return {
         adwrap: Adwrap.find(),
         tags: Qltags.find(),
+        pals: Adwpals.find(),
         charges: Charges.find()
       }
     }
@@ -175,12 +181,14 @@ Router.map(function() {
     waitOn: function () {
       return [Meteor.subscribe('adriteeconomyline'),
               Meteor.subscribe('charges'),
+              Meteor.subscribe('adritepals'),
               Meteor.subscribe('adritetags')];
     },
     data: function () {
       return {
         adriteeconomyline: Adriteeconomyline.find(),
         tags: Adritetags.find(),
+        pals: Adritepals.find(),
         charges: Charges.find()
       }
     }
@@ -195,13 +203,15 @@ Router.map(function() {
     waitOn: function () {
       return [Meteor.subscribe('cloudbuster'),
               Meteor.subscribe('cloudbusterkits'),
+              Meteor.subscribe('cloudpals'),
               Meteor.subscribe('cloudbustertags')];
     },
     data: function () {
       return {
         cloudbuster: Cloudbuster.find(),
         cloudbusterkits: Cloudbusterkits.find(),
-        tags: Cloudbustertags.find()
+        tags: Cloudbustertags.find(),
+        pals: Cloudpals.find()
       }
     }
   });
@@ -215,6 +225,7 @@ Router.map(function() {
     }, 
     waitOn: function () {
       return [Meteor.subscribe('outdoorballoons'),
+              Meteor.subscribe('outdoorpals'),
               Meteor.subscribe('charges'),
               Meteor.subscribe('outdoortags')];
     },
@@ -222,6 +233,7 @@ Router.map(function() {
       return {
         outdoorballoons: Outdoorballoons.find(),
         tags: Outdoortags.find(),
+        pals: Outdoorpals.find(),
         charges: Charges.find()
       }
     }
@@ -281,11 +293,13 @@ Router.map(function() {
     waitOn: function () {
       return [Meteor.subscribe('giantlatexballoons'),
               Meteor.subscribe('charges'),
-              Meteor.subscribe('gianttags')];
+              Meteor.subscribe('gianttags'),
+              Meteor.subscribe('qualatexpals')];
     },
     data: function () {
       return {
         giantlatexballoons: Giantlatexballoons.find(),
+        pals: Qualatexpals.find(),
         tags: Gianttags.find(),
         charges: Charges.find()
       }
@@ -412,11 +426,13 @@ Router.map(function() {
     },
     waitOn: function () {
       return [Meteor.subscribe('admaxminisportballs'),
-              Meteor.subscribe('admaxtags')]
+              Meteor.subscribe('admaxtags'),
+              Meteor.subscribe('admaxpals')]
     },
     data: function () {
       return {
         admaxminisportballs: Admaxminisportballs.find(),
+        pals: Admaxpals.find(),
         tags: Admaxtags.find()
       }
     }

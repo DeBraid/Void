@@ -62,19 +62,20 @@ Router.map(function() {
     template: 'roundballoons',
     yieldTemplates: {
       'charges': {to: 'charges'},
-      'palimg': {to: 'palimg'},
       'filterdropdown': {to: 'filterdropdown'}
     }, 
     waitOn: function () {
       return [Meteor.subscribe('roundballoons'),
               Meteor.subscribe('charges'),
+              Meteor.subscribe('qlpals'),
               Meteor.subscribe('tags')];
     },
     data: function () {
       return {
         roundballoons: Roundballoons.find(),
         charges: Charges.find(), 
-        tags: Tags.find()
+        tags: Tags.find(),
+        pals: Qlpals.find()
       }
     }
   });

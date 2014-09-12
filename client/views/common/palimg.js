@@ -5,9 +5,6 @@ Template.palimg.events({
 });
 
 Template.palimg.helpers({
-  pals: function () {
-      return Session.get('qualatexPals');
-  },
   qualatexPals: function () {
       return [
         { src: 'superagatepal.jpg' , desc : 'Super Agate' },

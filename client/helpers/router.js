@@ -410,12 +410,14 @@ Router.map(function() {
       return [Meteor.subscribe('twocolourballoons'),
               Meteor.subscribe('threecolourplus'),
               Meteor.subscribe('multitags'),
+              Meteor.subscribe('qualatexpals'),
               Meteor.subscribe('charges')];
     },
     data: function () {
       return {
         twocolourballoons: Twocolourballoons.find(),      
         threecolourplus: Threecolourplus.find(),      
+        pals: Qualatexpals.find(),
         tags: Multitags.find(),
         charges: Charges.find()
       }

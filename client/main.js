@@ -67,3 +67,23 @@ Template.layout.events({
         
     }
 });
+
+UI.registerHelper('hasPalDropdown', function () {
+
+    var route = Router.current();
+    var routeName = route.route.name.toString();
+
+    console.log('routeName is: ', routeName );
+    var noPals = ['tablecovers','popupbanners','eventtents', 'promoflags'];
+
+    return !_.contains(noPals, routeName);
+
+})
+
+
+
+
+
+
+
+

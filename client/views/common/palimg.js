@@ -4,26 +4,6 @@ Template.palimg.events({
   }
 });
 
-Template.palimg.rendered = function () {
-
-  var palImgLength = $('.srcs').length,
-      palImgMenu = $('#palimg button');
-
-
-
-      if ( palImgLength < 1 ) {
-        console.log('palImgLength: ', palImgLength);
-        console.log('hiding menu');
-        palImgMenu.hide();
-      } else {
-        console.log('palImgLength: ', palImgLength);
-        console.log('showing menu');
-        palImgMenu.show();
-      }
-
-};
-
-
 Template.palimg.helpers({
   qualatexPals: function () {
       return [

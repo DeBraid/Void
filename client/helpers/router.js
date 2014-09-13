@@ -90,12 +90,14 @@ Router.map(function() {
     waitOn: function () {
       return [Meteor.subscribe('heartballoons'),
               Meteor.subscribe('hearttags'),
+              Meteor.subscribe('adwpals'),
               Meteor.subscribe('charges')];
     },
     data: function () {
       return {
         heartballoons: Heartballoons.find(),
         tags: Hearttags.find(),
+        pals: Adwpals.find(),
         charges: Charges.find()
       }
     }

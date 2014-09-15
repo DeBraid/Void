@@ -5,9 +5,6 @@ Template.heartballoons.settings = function () {
         fields: [{
                         key: 'Product Description',
                         label: 'Product -- Price Per Balloon 4ABCD'
-                    },{
-                        key: 'ItemNum',
-                        label: 'Item #'
                     }, {
                         key: '250',
                         label: '250'

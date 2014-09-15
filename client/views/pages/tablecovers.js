@@ -38,11 +38,14 @@ Template.stretch.settings = function () {
         showFilter: true,
         showNavigation: 'never',
         fields: [{
-                  key: 'Product Description',
-                  label: 'Product -- Price Per Piece 4C2D'
+                    key: 'Product Description',
+                    label: 'Product -- Price Per Piece 4C2D'
                 }, {
                     key: 'ItemNum',
-                    label: 'Item #'
+                    label: 'Item #',
+                    fn: function  (value, object) {
+                            return parseInt(value);
+                    }
                 }, {
                     key: '1',
                     label: '1'

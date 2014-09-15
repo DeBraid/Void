@@ -12,7 +12,14 @@ Template.promoflagscontent.settings = function () {
                     label: 'Includes'
                 },{
                     key: 'ItemNum',
-                    label: 'Item #'
+                    label: 'Item #',
+                    fn: function  (value, object) {
+                        if ( value == 46307.00 || 46345.00) {
+                            return parseInt(value);
+                        } else {
+                            return value 
+                        }
+                    }
                 },{
                     key: '1',  
                     label: '1'

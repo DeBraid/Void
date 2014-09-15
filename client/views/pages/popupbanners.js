@@ -7,7 +7,10 @@ Template.popupbanners.settings = function () {
                   label: 'Product -- Price Per Piece 5C'
                 }, {
                     key: 'Panels', 
-                    label: 'Panels'
+                    label: 'Panels', 
+                    fn: function  (value, object) {
+                        return parseInt(value);
+                    }
                 },{
                     key: 'ItemNum', 
                     label: 'Item #'

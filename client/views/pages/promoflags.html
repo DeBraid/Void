@@ -24,18 +24,14 @@
     <div class="row">
       {{> yield region='filterdropdown' }}
     </div>
-    
+
     <div class="row">
       {{> reactiveTable collection=promoflags settings=settings }}
     </div>
 
-    <h4>Accessories:</h4>
-
-    <ul>
-      <li><strong>Metal Cross Bar Base with Ground Stake and Rotating Ball Bearing Stem (# 31181) $45.75 each</strong>.  For Indoor or Outdoor use. If using outdoors, we recommend purchasing the PVC Water Weight Bag</li>
-      <li><strong>PVC Water Weight Bag (# 31186) $9.00 each.</strong>  For use with Metal Cross Bar Base</li>
-      <li><strong>Extra Ground Stake (# 31180) $27.50 each.</strong>  Equipped with Rotating Ball Bearing Stem</li>
-    </ul>
+    <div class="row">
+      {{> promoflagInfoSS }}
+    </div>
 </template>
 
 <template name="promoheader">
@@ -60,16 +56,22 @@
   
   
   <div class="row">
-      {{> reactiveTable collection=econflags settings=settings }}
-    </div>
+    {{> reactiveTable collection=econflags settings=settings }}
+    <p><strong>*</strong> same design one-side digital imprint with mirror image on second side</p>
+
+    <p><strong>**</strong> Price includes flags with same design digital imprint on 2 side</p>
+  </div>
+   <div class="row">
+    {{> econflagInfoSS }}
+  </div>
   
-  <p><strong>*</strong> same design one-side digital imprint with mirror image on second side</p>
 
-  <p><strong>**</strong> Price includes flags with same design digital imprint on 2 side</p>
+</template>
 
-  <section>
-    <p><strong>Shipping</strong> F.O.B: Miami Florida. Duty and Brokerage may apply</p>
-    <p>Approx. 3-4 business weeks from confirmed order and sketch approval</p>
-  </section>
+<template name="promoflagInfoSS">
+  <img class="img-responsive"  src="promoflag-info-ss.png" alt="">
+</template>
 
+<template name="econflagInfoSS">
+  <img class="img-responsive"  src="econflag-info-ss.png" alt="">
 </template>

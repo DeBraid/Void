@@ -13,7 +13,10 @@ Template.popupbanners.settings = function () {
                     }
                 },{
                     key: 'ItemNum', 
-                    label: 'Item #'
+                    label: 'Item #',
+                     fn: function  (value, object) {
+                        return parseInt(value);
+                    }
                 }, {
                     key: '1',
                     label: '1'

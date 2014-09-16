@@ -1,7 +1,7 @@
 Template.largequantmicrofoil.settings = function () {
     return {
-        showFilter: true,
         rowsPerPage: 25,
+        showFilter: true,
         showNavigation: 'never',
         fields: [{
                   key: 'Product Description',

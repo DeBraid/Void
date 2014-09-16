@@ -6,9 +6,6 @@ Template.outdoorballoons.settings = function () {
                   key: 'Product Description',
                   label: 'Product -- Price Per Balloon 3ABC'
                 }, {
-                    key: 'Item Number',
-                    label: 'Item #'
-                }, {
                     key: '1 Side Printing',
                     label: '1 Side Printing'
                 }, {

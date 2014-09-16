@@ -2,11 +2,12 @@
   <div class="container">
     <div class="row">
         
-        {{#each charges }}
-          <div id="charges" class="col-lg-4">
+          <div id="charges">
+            <h4>Charges</h4>
+            {{#each charges }}
             <p><strong>{{ Charge }}</strong>: {{ Cost }}</p>
+            {{/each}}
           </div>
-        {{/each}}
 
     </div>
   </div>

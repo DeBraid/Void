@@ -8,6 +8,12 @@ Template.nonfitted.settings = function () {
                   key: 'Product Description',
                   label: 'Product -- Price Per Piece 4C2D'
                 }, {
+                    key: 'ItemNum',
+                    label: 'Item #',
+                    fn: function  (value, object) {
+                            return parseInt(value);
+                    }
+                }, {
                     key: 'Printing',
                     label: 'Printing'
                 }, {

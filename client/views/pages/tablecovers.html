@@ -4,12 +4,6 @@
 
         <div class="row">
             {{> tableheader }}
-            <ul>
-                <li>Fitted Table Covers also available. <strong>Must mention Fitted Table Cover on purchase order.</strong>
-                </li>
-                <li><strong>Set-Up Charge:</strong> $50.00 only one SET UP CHARGE PER TABLE COVER regardless of number of imprint areas (with same imprint).</li>
-                <li><strong>Top Imprint:</strong> Add $15.00 and includes the entire quantity with same imprint.</li>
-            </ul>
         </div>
 
         <div class="row">
@@ -75,7 +69,7 @@
             {{> reactiveTable collection=stretchtablecovers settings=settings}}
         </div>
         
-        <p><strong>*</strong> Plain stock colours: White, Black, Red or Blue</p> 
+        <p>* Plain stock colours: White, Black, Red or Blue</p> 
     </div>
 
 
@@ -83,11 +77,15 @@
 </template>
 
 <template name="tablecoversextra">
-    <section>
-        <p><strong>Price above include a 4-sided table cover with full-colour dye sublimation print; add any additional charges</strong>
-        </p>
-        <p><strong>Set up (#36996) $50.00.</strong> Only one SET UP CHARGE PER TABLE COVER regardless of number of imprint areas and includes the entire quantity with same imprint.</p>
-        <p>Top Print Add: $15.00</p>
+
+    <section id="charges">
+        <h4>Charges</h4>
+        <ul>
+            <li>Fitted Table Covers also available. <strong>Must mention Fitted Table Cover on purchase order.</strong>
+            </li>
+            <li><strong>Set-Up Charge:</strong> $50.00 only one SET UP CHARGE PER TABLE COVER regardless of number of imprint areas (with same imprint).</li>
+            <li><strong>Top Imprint:</strong> Add $15.00 and includes the entire quantity with same imprint.</li>
+        </ul>
     </section>
 
     <section>
@@ -103,37 +101,41 @@
     <h3>Imprint Area:</h3> 
 
     <section>
-        <h4>6ft. Non-Fitted Table Cover Full Colour Dye Sublimation Imprint Area</h4>
-        <ul>
-            <li>Front/Back Imprint Area: 21”H x 60”W</li>
-            <li>Side Imprint Area: 21”H x 24”W</li>
-        </ul>
+        <div class="col-sm-6">
+            <h4>6ft. Non-Fitted Table Cover Full Colour Dye Sublimation Imprint Area</h4>
+            <ul>
+                <li>Front/Back Imprint Area: 21”H x 60”W</li>
+                <li>Side Imprint Area: 21”H x 24”W</li>
+            </ul>
+        </div>
+        <div class="col-sm-6">
+            <h4>6ft. Non-Fitted Table Cover Full Colour/ Full Bleed Imprint Area</h4>
+            <ul>
+                <li>Front/Back Imprint Area: 29”H x 72”W</li>
+                <li>Side Imprint Area: 29”H x 30”W</li>
+                <li>All Over Imprint Area: 88”H x 130”W</li>
+            </ul>
+        </div>
     </section>
 
     <section>
-        <h4>6ft. Non-Fitted Table Cover Full Colour/ Full Bleed Imprint Area</h4>
-        <ul>
-            <li>Front/Back Imprint Area: 29”H x 72”W</li>
-            <li>Side Imprint Area: 29”H x 30”W</li>
-            <li>All Over Imprint Area: 88”H x 130”W</li>
-        </ul>
-    </section>
-
-    <section>
-        <h4>8ft. Non-Fitted Table Cover Full Colour Dye Sublimation Imprint Area</h4>
-        <ul>
-            <li>Front/Back Imprint Area: 21”H x 72”W</li>
-            <li>Side Imprint Area: 21”H x 24”W</li>
-        </ul>
-    </section>
-
-    <section>
-        <h4>8ft. Non-Fitted Table Cover Full Colour/ Full Bleed Imprint Area</h4>
-        <ul>
-            <li>Front/Back Imprint Area: 29”H x 96”W</li>
-            <li>Side Imprint Area: 29”H x 30”W</li>
-            <li>All Over Imprint Area: 88”H x 154”W</li>
-        </ul>
+    
+        <div class="col-sm-6">
+            <h4>8ft. Non-Fitted Table Cover Full Colour Dye Sublimation Imprint Area</h4>
+            <ul>
+                <li>Front/Back Imprint Area: 21”H x 72”W</li>
+                <li>Side Imprint Area: 21”H x 24”W</li>
+            </ul>
+        </div>
+         <div class="col-sm-6">
+            <h4>8ft. Non-Fitted Table Cover Full Colour/ Full Bleed Imprint Area</h4>
+            <ul>
+                <li>Front/Back Imprint Area: 29”H x 96”W</li>
+                <li>Side Imprint Area: 29”H x 30”W</li>
+                <li>All Over Imprint Area: 88”H x 154”W</li>
+            </ul>
+        </div>   
+         
     </section>
 
 

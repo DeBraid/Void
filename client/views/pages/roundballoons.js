@@ -1,8 +1,8 @@
 Template.roundballoons.settings = function () {
     return {
+        rowsPerPage: 25,
         showFilter: true,
         showNavigation: 'never',
-        rowsPerPage: 11,
         fields: [{
                     key: 'Product Description',
                     label: 'Product -- Price Per Balloon 4ABCD'

@@ -4,6 +4,12 @@ Template.roundballoons.settings = function () {
         showFilter: true,
         showNavigation: 'never',
         fields: [{
+                    key: 'Size',
+                    label: 'Size - Inch',
+                    fn: function (value, object) {
+                        return value = parseInt(value);
+                    }
+                },{
                     key: 'Product Description',
                     label: 'Product -- Price Per Balloon 4ABCD'
                 }, {
@@ -30,4 +36,13 @@ Template.roundballoons.settings = function () {
                 }
             ]
     };
+};
+
+
+Template.roundballoons.rendered = function (evt,tmpl) {
+    var desc = $('td.Product').innerText;
+    console.log('desc: ', desc);
+    var foo  = desc.replace(/^0+/, '');
+    console.log('foo: ', foo);
+
 };

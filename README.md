@@ -6,7 +6,7 @@ By Derek Braid at [cacheflow.ca](http://cacheflow.ca).
 
 Uses [Meteor](http://meteor.com) and [IronRouter](https://github.com/EventedMind/iron-router).
 
-Hosted at [Pioneer Line](http://pioneerline.com) 
+Hosted at [Pioneer Line](http://pioneerline.ca) 
 
 ## Inspiration
 

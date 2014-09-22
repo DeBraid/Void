@@ -4,7 +4,8 @@ Template.quicklinkonecolour.settings = function () {
         showNavigation: 'never',
         fields: [{
                   key: 'Product Description',
-                  label: 'Product -- Price Per Balloon 3A'
+                  label: 'Product -- Price Per Balloon 3A',
+                  sort: 'descending'
                 }, {
                     key: 'Printing',
                     label: 'Printing'

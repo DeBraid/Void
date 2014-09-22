@@ -4,15 +4,14 @@ Template.roundballoons.settings = function () {
         showFilter: true,
         showNavigation: 'never',
         fields: [{
-                    key: 'Size',
-                    label: 'Inches',
-                    fn: function (value, object) {
-                        return parseInt(value);
-                    }, 
-                    sort: 'ascending'
-                },{
                     key: 'Product Description',
-                    label: 'Product -- Price Per Balloon 4ABCD'
+                    label: 'Product -- Price Per Balloon 4ABCD',
+                    fn: function (str) {
+                            var sortString = ("0000" + parseInt(str, 10)).slice(-4); 
+                            var html = "<span sortString=" + sortString + ">" + str + "</span>";
+                            return Spacebars.SafeString(html);
+                    },
+                    sort: 'ascending'
                 }, {
                     key: '250',
                     label: '250'

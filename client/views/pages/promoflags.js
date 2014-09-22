@@ -6,7 +6,13 @@ Template.promoflagscontent.settings = function () {
         showNavigation: 'never',
         fields: [{
                     key: 'Product Description',
-                    label: 'Product -- Price Per Piece 5C'
+                    label: 'Product -- Price Per Piece 5C',
+                    fn: function (str) {
+                            var sortString = ("0000" + parseInt(str, 10)).slice(-4); 
+                            var html = "<span sortString=" + sortString + ">" + str + "</span>";
+                            return Spacebars.SafeString(html);
+                    },
+                    sort: 'ascending'
                 }, {
                     key: 'Includes',
                     label: 'Includes'

@@ -8,8 +8,13 @@ Template.promoflagscontent.settings = function () {
                     key: 'Product Description',
                     label: 'Product -- Price Per Piece 5C',
                     fn: function (str) {
-                            var sortString = ("0000" + parseInt(str, 10)).slice(-4); 
-                            var html = "<span sortString=" + sortString + ">" + str + "</span>";
+                            var sortString = ("0000" + parseInt(str, 10)).slice(-4),
+                                unit = 'ft',
+                                str1 = str.split(' '),
+                                size = str1[0].split(unit),
+                                myString = "" + size[0] + " " + unit + " " + str1[1] + "";
+                            
+                            var html = "<span sortString=" + sortString + ">" + myString + "</span>";
                             return Spacebars.SafeString(html);
                     },
                     sort: 'ascending'

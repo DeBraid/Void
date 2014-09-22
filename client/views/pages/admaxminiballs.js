@@ -4,7 +4,17 @@ Template.admaxminisportballs.settings = function () {
         showNavigation: 'never',
         fields: [{
                   key: 'Product Description',
-                  label: 'Product -- Price Per Balloon 2ABCD'
+                  label: 'Product -- Price Per Balloon 2ABCD',
+                  fn: function (str) {
+                        var sortString = ("0000" + parseInt(str, 10)).slice(-4),
+                            unit = 'inch',
+                            size = str.split(unit),
+                            myString = "" + size[0] + " " + unit + " " + size[1] + "";
+                        
+                        var html = "<span sortString=" + sortString + ">" + myString + "</span>";
+                        return Spacebars.SafeString(html);
+                    },
+                    sort: 'ascending'
                 }, {
                     key: 'Notes',
                     label: 'Notes'

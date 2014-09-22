@@ -4,7 +4,18 @@ Template.cloudbusterkits.settings = function () {
         showNavigation: 'never',
         fields: [{
                   key: 'Product Description',
-                  label: 'Product -- Price Per Kit ABCD'
+                  label: 'Product -- Price Per Kit ABCD',
+                  fn: function (str) {
+                        var sortString = ("0000" + parseInt(str, 10)).slice(-4),
+                            unit = 'ft',
+                            str1 = str.split(unit),
+                            size = str1,
+                            myString = "" + size[0] + " " + unit + " " + str1[1] + "";
+                        
+                        var html = "<span sortString=" + sortString + ">" + myString + "</span>";
+                        return Spacebars.SafeString(html);
+                    },
+                    sort: 'ascending'
                 }, {
                     key: 'Colours',
                     label: 'Colours'

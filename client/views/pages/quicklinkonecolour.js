@@ -5,7 +5,17 @@ Template.quicklinkonecolour.settings = function () {
         fields: [{
                   key: 'Product Description',
                   label: 'Product -- Price Per Balloon 3A',
-                  sort: 'descending'
+                  fn: function (str) {
+                        var sortString = ("0000" + parseInt(str, 10)).slice(-4),
+                            unit = 'inch',
+                            str1 = str.split(unit),
+                            size = str1,
+                            myString = "" + size[0] + " " + unit + " " + str1[1] + "";
+                        
+                        var html = "<span sortString=" + sortString + ">" + myString + "</span>";
+                        return Spacebars.SafeString(html);
+                    },
+                    sort: -1
                 }, {
                     key: 'Printing',
                     label: 'Printing'

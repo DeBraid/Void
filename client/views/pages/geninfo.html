@@ -1,3 +1,5 @@
+<!-- DISCLAIMER BELOW -->
+
 <template name="geninfo">
   <h1>General Information</h1>  
   <h3>General Ordering Information</h3>
@@ -49,10 +51,15 @@
     <li>For process print, submit art as a layered Adobe Photoshop® file - If flat art is submitted, extra prep charges may apply.</li>
   </ul>
 
-  <div id="disclaimer" class="row">
+ {{> disclaimer }}
+  
+</template>
+
+
+<template name="disclaimer">
+   <div id="disclaimer" class="row">
      <p><i class="fa fa-warning"></i>Children under 8 years can choke or suffocate on uninflated or broken balloons. Adult supervision required.  Keep uninflated balloons from children. Discard broken balloons at once.</p>
 
      <p><i class="fa fa-warning"></i>Latex balloons are made of natural rubber latex, which may cause allergic reactions.</p>
   </div>
-  
 </template>

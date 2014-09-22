@@ -185,7 +185,8 @@ header
     #header span#four { color: #0072bb }
     
     #header header,
-    #social > ul
+    #social > ul,
+    #contact-disclaimer
     {
       display: inline-block;
       padding: 0em 0.5em 0em 0.5em;
@@ -250,6 +251,14 @@ header
   font-size: 1.2em;
 }
 
+#contact-disclaimer {
+  padding-bottom: 0 !important;
+}
+
+#contact-disclaimer p {
+  margin: 1em !important;
+}
+
 .contact-text {
   color: #0072bb;
   text-shadow: 0 0 0.5px rgba(255,255,255,0.15);
@@ -280,7 +289,8 @@ header
           box-shadow: inset 0 1px 1px rgba(255,223,0, 0.5), 0 0 8px rgba(255,223,0, 0.2);
 }
 
-#contact-container {
+#contact-container,
+#contact-disclaimer {
   color: #252175;
   text-shadow: 0 0 0.5px rgba(255,255,255,0.25);
   text-align: center;

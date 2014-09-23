@@ -77,11 +77,3 @@ UI.registerHelper('hasPalDropdown', function () {
     return !_.contains(noPals, routeName);
 
 })
-
-
-
-
-
-
-
-

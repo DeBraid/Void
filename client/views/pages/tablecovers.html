@@ -40,9 +40,14 @@
    <div class="row">
         <h3>Non-Fitted Table Covers</h3>
         
-        {{> filterdropdown }}
+        <div class="row">
+            {{> filterdropdown }}
+        </div>
+        <div class="row">
+            {{> reactiveTable collection=nonfittedtablecovers settings=settings}}
+            
+        </div>
     
-        {{> reactiveTable collection=nonfittedtablecovers settings=settings}}
     
     </div>
 </template>

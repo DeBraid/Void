@@ -16,15 +16,16 @@ body {
   height: 80px;
 }
 
-.showBackgroundImage { 
+/*.showBackgroundImage { 
    background: url(pioneerlinebackground.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
+}*/
 
-.noBackgroundImage {
+.noBackgroundImage,
+.showBackgroundImage {
   background: rgb(254,252,234); /* Old browsers */
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxNCUiIHN0b3AtY29sb3I9IiNmZWZjZWEiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI2OCUiIHN0b3AtY29sb3I9IiNmZmRmMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI4MCUiIHN0b3AtY29sb3I9IiNmMWRhMzYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI5OSUiIHN0b3AtY29sb3I9IiNmMWRhMzYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI5OSUiIHN0b3AtY29sb3I9IiNmMWRhMzYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -185,11 +186,10 @@ header
 
   #header
   {
-    position: relative;
+    /*position: relative;*/
     color: #252175;
     text-align: center;
     margin: 0;
-    padding: 5em 0 5em 0;
     cursor: default;
   }
 
@@ -209,25 +209,16 @@ header
     {
       display: inline-block;
       padding: 0em 0.5em 0em 0.5em;
-      border-radius: 20px;
-      border: solid 1px #fff;
-      background: rgb(255,255,127); /* Old browsers */
-      /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMjElIiBzdG9wLWNvbG9yPSIjZmZmZjdmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iODUlIiBzdG9wLWNvbG9yPSIjYTBiNWQ4IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-      background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,127,0.75) 21%, rgba(160,181,216,0.875) 85%); /* FF3.6+ */
-      background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(21%,rgba(255,255,127,0.875)), color-stop(85%,rgba(160,181,216,0.875))); /* Chrome,Safari4+ */
-      background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,127,0.875) 21%,rgba(160,181,216,0.875) 85%); /* Chrome10+,Safari5.1+ */
-      background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,127,0.875) 21%,rgba(160,181,216,0.875) 85%); /* Opera 12+ */
-      background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,127,0.875) 21%,rgba(160,181,216,0.875) 85%); /* IE10+ */
-      background: radial-gradient(ellipse at center,  rgba(255,255,127,0.875) 21%,rgba(160,181,216,0.875) 85%); /* W3C */
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff7f', endColorstr='#a0b5d8',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+      border-radius: 10px;
+      border: solid 0.5px #fff;
+      background: #FFFF7F;
     }
     
       #header header h1
       {
         font-weight: 600;
         font-size: 2em;
-        letter-spacing: 10px;
+        letter-spacing: 5px;
       }
 
       #header header p
@@ -261,6 +252,10 @@ header
 #codes {
   float: right;
   padding-right: 2em;
+}
+
+#codes-row {
+  margin-bottom: 1em;
 }
 
 /*********************************************************************************/
@@ -319,7 +314,7 @@ header
 }
 
 #mapleleaf img {
-  max-width: 3.5em;
+  max-width: 2em;
   float: right;
 }
 
@@ -545,4 +540,33 @@ header
 
 #quick-find-caret {
   color: #ffdf00 !important;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 1;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 450px;
+  margin-top: 2em;
+}
+.carousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 400px;
+}
+
+#grid-image {   
+  height: 20em;
+  overflow: hidden;
 }

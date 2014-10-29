@@ -77,3 +77,20 @@ UI.registerHelper('hasPalDropdown', function () {
     return !_.contains(noPals, routeName);
 
 })
+
+
+
+Template.imageGrid.helpers({
+    latexMenu: function () {
+        return [
+            { title : "<p>One-Colour Print</p>" , path : "roundballoons", src : "Prairie.jpg", href : "" },
+            { title : "<p>Heart Balloons</p>" , path : "heartballoons", src : "Heart.jpg", href : "" },
+            { title : "<p>Multi-Colour Print</p>" , path : "multicolourprint", src : "MulticolourCrop.png", href : "" },
+            { title : "<p>QuickLink<sup>TM</sup> One-Colour</p>" , path : "quicklinkonecolour", src : "qlinkarch.jpg", href : "" },
+            { title : "<p>AdWrap<sup>®</sup> Balloons</p>" , path : "adwrap", src : "AdWrapStockAware.jpg", href : "" },
+            { title : "<p>AdWave<sup>®</sup> Balloons</p>" , path : "adwave", src : "Adwaves2014.jpg", href : "" },
+            { title : "<p>Giant Latex Balloons</p>" , path : "giantlatexballoons", src : "giantballoons.jpg", href : "" }
+
+        ]
+    }
+});

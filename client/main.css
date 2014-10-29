@@ -211,15 +211,7 @@ header
       padding: 0em 0.5em 0em 0.5em;
       border-radius: 10px;
       border: solid 0.5px #fff;
-      background: #FFFF7F;
     }
-    
-      #header header h1
-      {
-        font-weight: 600;
-        font-size: 2em;
-        letter-spacing: 5px;
-      }
 
       #header header p
       {
@@ -476,10 +468,6 @@ header
   text-align: center;
 }
 
-.filter-button-container button {
-  margin: 4px;
-}
-
 @media (max-width: 500px) {
   
   .btn-responsive {
@@ -497,9 +485,8 @@ header
 #specialshapes {
 }
 
-#main-select-button {
-  padding: 10px 22px;
-  line-height: 1;
+#main-select-button .dropdown-menu {
+  width: 100%; 
 }
 .fa-star-o {
   font-weight: 100;
@@ -554,6 +541,12 @@ header
   z-index: 1;
 }
 
+.carousel-control {
+  background-image: none !important;
+  font-size: 36px;
+  color: #5CB85C;
+}
+
 /* Declare heights because of positioning of img element */
 .carousel .item {
   height: 450px;
@@ -570,3 +563,10 @@ header
   height: 20em;
   overflow: hidden;
 }
+
+.btn-show-all {
+  background: #ea1d22;
+  margin: 1em;
+}
+
+

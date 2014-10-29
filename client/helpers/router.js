@@ -472,4 +472,9 @@ Router.map(function() {
     }
   });
 
+  this.route('categories', {
+    path: '/categories',
+    template: 'categories'
+  });
+
 });

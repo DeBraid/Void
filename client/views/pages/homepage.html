@@ -13,7 +13,20 @@
             {{> carousel }}
         </div>
     </div>
-    
+
+</template>
+
+<template name="header">
+    <div id="header">    
+        <div class="header-text">
+            <h2>Aim High with  <i class="fa fa-star-o"  ></i>  Vise haut avec</h2>
+        </div>
+        <div class="header-text">
+            <h1>PIONEER <span>LINE</span> <span id="two">2</span><span id="zero">0</span><span id="one">1</span><span id="four">4</span></h1>
+        </div>
+        <img id="logo" src="pllogo.jpg" alt="">
+        {{> homepageBtnGroup }}
+    </div>
 </template>
 
 <template name="carousel">
@@ -44,25 +57,5 @@
       <a class="right carousel-control" href="#myCarousel" data-slide="next">
         <span class="icon-next"></span>
       </a>  
-    </div>
-</template>
-
-<template name="header">
-    <div class="row" id="header">
-        <header>
-            <div class="header-text">
-                <h2>Aim High with  <i class="fa fa-star-o"  ></i>  Vise haut avec</h2>
-            </div>
-            <div class="header-text">
-                <h2>PIONEER <span>LINE</span> <span id="two">2</span><span id="zero">0</span><span id="one">1</span><span id="four">4</span></h2>
-            </div>
-            <img id="logo" src="pllogo.jpg" alt="">
-           
-
-        </header>
-           {{> homepageBtnGroup }}
-    </div>
-    <div  class="row">
-     
     </div>
 </template>

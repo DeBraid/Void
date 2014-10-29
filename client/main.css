@@ -196,6 +196,7 @@ header
 
   #header #logo {
     width: 100%;
+    margin: 2em 0em 2em 0em;
   }
     #header span { color: #009ae2 }
 
@@ -235,6 +236,10 @@ header
 
         .header-text {
           text-shadow: 0 0 2.5px rgba(255,255,255,0.6);
+
+        }
+        .header-text h1 {
+         font-size: 3.3em;   
         }
 
 

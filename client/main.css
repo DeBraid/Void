@@ -580,4 +580,6 @@ header
   margin: 1em;
 }
 
-
+.dropdown-toggle {
+  font-size: 1.5em;
+}

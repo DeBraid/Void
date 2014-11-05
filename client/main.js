@@ -1,12 +1,3 @@
-/* ---------------------------------------------------- +/
-
-## Main ##
-
-Global client-side code. Loads last. 
-
-/+ ---------------------------------------------------- */
-
-
 Template.homepage.rendered = function () {
     $('#scrollToTop').hide();
     var route = Router.current();

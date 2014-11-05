@@ -25,12 +25,16 @@ var filters = {
   }, 
   showScrollToTopButton: function () {
     $('#scrollToTop').show();
+  }, 
+  scrollToTop: function () {
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
   }
 }
 
 Router.onBeforeAction(filters.setBackground);
 Router.onBeforeAction(filters.clearInputValue);
 Router.onAfterAction(filters.showScrollToTopButton);
+Router.onAfterAction(filters.scrollToTop);
 
 // Routes
 Router.map(function() {

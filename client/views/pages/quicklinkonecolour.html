@@ -7,7 +7,12 @@
     {{> yield region="filterdropdown" }}
   </div>
   <div class="row">
-    {{> reactiveTable collection=quicklinkonecolour settings=settings}}
+    <div class="col-sm-3">
+      <img class="img-responsive"  src="qlinkarch.jpg" alt="">
+    </div>
+    <div class="col-sm-9">
+      {{> reactiveTable collection=quicklinkonecolour settings=settings}}
+    </div>
   </div>
   
 

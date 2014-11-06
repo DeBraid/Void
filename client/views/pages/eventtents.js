@@ -17,7 +17,10 @@ Template.eventtents.settings = function () {
                     sort: 'ascending'
                 }, {
                     key: 'Locations',
-                    label: 'Print Locations'
+                    label: 'Print Locations',
+                    fn: function (str) {
+                        return parseInt(str);
+                    }
                 }, {
                     key: '1',
                     label: '1'

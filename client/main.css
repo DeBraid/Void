@@ -1,5 +1,24 @@
+@font-face {
+  font-family: 'GothamBold';
+  src: url('gotham-bold.eot'); /* IE9 Compat Modes */
+  src: url('gotham-bold.woff') format('woff'), /* Modern Browsers */
+       url('gotham-bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'GothamMedium';
+  src: url('Gotham-Medium.eot'); /* IE9 Compat Modes */
+  src: url('Gotham-Medium.woff') format('woff'), /* Modern Browsers */
+       url('Gotham-Medium.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'GothamLight';
+  src: url('gotham-light.eot'); /* IE9 Compat Modes */
+  src: url('gotham-light.woff') format('woff'), /* Modern Browsers */
+       url('gotham-light.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
 html {
-  font-family: 'Montserrat';
+  font-family: 'GothamBold';
   position: relative;
   min-height: 100%;
   padding-bottom: 80px
@@ -7,6 +26,11 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  font-family: 'GothamBold';
+}
+
+button, .btn {
+  font-family: 'GothamLight';
 }
 .footer {
   position: absolute;
@@ -58,7 +82,8 @@ h1 {
 
 
 td {
-  font-size: 1.25em;
+  /*font-size: 1.25em;*/
+  font-family: 'GothamMedium';
   margin-top: 1.5em;
 }
 
@@ -70,18 +95,16 @@ td {
 td.Product.Description {
   width: 33% !important;
 }
-
-
-
-
 /*********************************************************************************/
 /* TABLE (REACTIVE TABLE)                                                                        */
 /*********************************************************************************/
+
 .tableimages {
   width:30%;
   overflow: hidden;
   max-height: 7.5em;
 }
+
 @media (max-width: 1199px) {
     .tableimages {
         width: 42%;
@@ -161,6 +184,7 @@ td.Product.Description {
 
 .dropdown-menu {
   background-color: #82c13f !important;
+  font-family: 'GothamMedium';
 }
 /* dropdown */
 #colour-palette {
@@ -239,7 +263,10 @@ header
 
         }
         .header-text h1 {
-         font-size: 3.3em;   
+         font-size: 3em;   
+        }
+        .header-text h2 {
+         font-size: 2em;   
         }
 
 
@@ -315,24 +342,8 @@ header
   float: right;
 }
 
-@media (max-width: 1199px) {
-  .dropdown {
-      font-size: 0.9em;
-  }
-}
-
-@media (max-width: 1155px) {
-  .dropdown {
-      font-size: 0.8em;
-  }
-}
-
-@media (max-width: 1125px) {
-  .dropdown {
-      font-size: 0.7em;
-  }
-}
-@media (max-width: 1066px) {
+/* flip NAV to Menu Mode*/
+@media (max-width: 1260px) {
     .navbar-header {
         float: none;
     }
@@ -487,9 +498,6 @@ header
   margin: 0 0 0.5em 0.5em;
 }
 
-#specialshapes {
-}
-
 #main-select-button .dropdown-menu {
   width: 100%; 
 }
@@ -521,7 +529,9 @@ header
   margin: 1em 0em 1em 0em;
 }
 
-.Size {
+/* special column widths */
+.Size,
+.Locations {
   width: 5%;
 }
 
@@ -578,8 +588,4 @@ header
 .btn-show-all {
   background: #ea1d22;
   margin: 1em;
-}
-
-.dropdown-toggle {
-  font-size: 1.5em;
 }

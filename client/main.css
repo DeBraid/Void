@@ -192,6 +192,18 @@ td.Product.Description {
   max-width: 300px;
 }
 
+@media (max-width: 330px) {
+  .navbar-brand {
+    font-size: 1.25em;
+  }
+}
+
+@media (max-width: 330px) {
+  #header h2 {
+    font-size: 1.1em;
+  }
+}
+
 
 /*********************************************************************************/
 /* Header                                                                        */

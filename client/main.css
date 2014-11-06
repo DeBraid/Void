@@ -198,7 +198,7 @@ td.Product.Description {
   }
 }
 
-@media (max-width: 330px) {
+@media (max-width: 390px) {
   #header h2 {
     font-size: 1.1em;
   }

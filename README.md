@@ -61,7 +61,8 @@ Meeting Notes - Week of Nov 11
 8.  Add Maple Leaf to top-right of all pages
 9.  Get logo as .png with transparent background
 10. IE BUG or palette stretch in diff browsers?  
-11. View Each Balloon individually 
+11. View Each Balloon individually (from within a colour palette)
+  -- is this too resource intensive? (TEST!) 
 12. Carousel timer aprox 4000ms
 13. remove title and header from home page
 14. see above, replace with Qualatex and AdRite logos

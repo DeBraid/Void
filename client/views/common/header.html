@@ -15,12 +15,24 @@
 
     <div class="collapse navbar-collapse" id="navbar-collapse">
       <ul class="nav navbar-nav">
-        {{> latexMenu}}
-        {{> economyLineMenu}}
-        {{> microfoilMenu}}
-        {{> ballsMenu}}
-        {{> eventsMenu}}
-        {{> resourcesMenu}}
+        <li class="dropdown {{ activeIfTemplateIs 'latexMenu'}}">
+          {{> latexMenu }}
+        </li>
+        <li class="dropdown {{ activeIfTemplateIs 'economyLineMenu' }}">
+          {{> economyLineMenu }}
+        </li>
+        <li class="dropdown {{ activeIfTemplateIs 'microfoilMenu' }}">
+          {{> microfoilMenu }}
+        </li>
+        <li class="dropdown {{ activeIfTemplateIs 'ballsMenu' }}">
+          {{> ballsMenu }}
+        </li>
+        <li class="dropdown {{ activeIfTemplateIs 'promoflags' }}">
+          {{> eventsMenu }}
+        </li>
+        <li class="dropdown {{ activeIfTemplateIs 'resourcesMenu' }}">
+          {{> resourcesMenu }}
+        </li>
       </ul>
       
       <ul class="nav navbar-nav navbar-right">

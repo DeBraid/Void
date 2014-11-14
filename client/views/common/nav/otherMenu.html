@@ -1,23 +1,19 @@
 <template name="resourcesMenu">
-  <li class="dropdown">
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<span class="caret"></span></a>
-    <ul class="dropdown-menu" role="menu">
-      <li><a href="{{ pathFor 'geninfo' }}">General Information</a></li>
-      {{#each resources }}
-      <li><a href="{{ href }}" target="_blank">{{ title }}</a></li>
-      {{/each }}
-    </ul>
-  </li>
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<span class="caret"></span></a>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="{{ pathFor 'geninfo' }}">General Information</a></li>
+    {{#each resources }}
+    <li><a href="{{ href }}" target="_blank">{{ title }}</a></li>
+    {{/each }}
+  </ul>
 </template>
 
 <template name="eventsMenu">
-  <li class="dropdown">
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Events<span class="caret"></span></a>
-    <ul class="dropdown-menu" role="menu">
-      <li><a href="{{ pathFor 'popupbanners' }}">Pop Up Banners</a></li>
-      <li><a href="{{ pathFor 'tablecovers' }}">Table Covers</a></li>
-      <li><a href="{{ pathFor 'eventtents' }}">Event Tents</a></li>
-      <li><a href="{{ pathFor 'promoflags' }}">Promotional Flags</a></li>
-    </ul>
-  </li>
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Events<span class="caret"></span></a>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="{{ pathFor 'popupbanners' }}">Pop Up Banners</a></li>
+    <li><a href="{{ pathFor 'tablecovers' }}">Table Covers</a></li>
+    <li><a href="{{ pathFor 'eventtents' }}">Event Tents</a></li>
+    <li><a href="{{ pathFor 'promoflags' }}">Promotional Flags</a></li>
+  </ul>
 </template>

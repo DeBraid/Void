@@ -66,6 +66,6 @@ Meeting Notes - Week of Nov 11
 12. Carousel timer aprox 4000ms
 (x)13. remove title and header from home page
 (x)14. see above, replace with Qualatex and AdRite logos
-15. Contact page: insert main, Qualatex and AdRite logos 
+(x)15. Contact page: insert main, Qualatex and AdRite logos 
 16. Add CSS effect to nav to show routeActive
 

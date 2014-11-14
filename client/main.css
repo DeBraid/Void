@@ -284,7 +284,13 @@ header
 #small-logo-container {
   margin-top: 1em;
 }
-
+#contact-main-logo-container .img-responsive {
+  margin: 0 auto;
+}
+#contact-small-logo-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
 .small-homepage-logos {
   width: 40%;
   margin: 1em;
@@ -326,7 +332,7 @@ header
 }
 
 .contact-header {
-  padding: 5em 0 5em 0 !important;
+  padding: 5em 0 3em 0 !important;
 }
 
 #codes,.footer {

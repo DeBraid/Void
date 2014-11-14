@@ -1,79 +1,6 @@
 <template name="contact">
-    
-    {{> contactInfo}}
-
-    <section id="header">
-    <div class="row">
-      <div id="contact-main-logo-container">
-        <a href="{{ pathFor 'homepage' }}">
-          <img class="img-responsive" src="pllogo.jpg" alt="main-logo">
-        </a>
-      </div>
-    </div>
-    <div id="contact-small-logo-container" class="row">
-      {{> smallLogos }}
-    </div>
-    </section>
-
-<!--     <div id="contact-disclaimer">
-      <h4>DISCLAIMER</h4>
-      {{> disclaimer }}
-    </div> -->
-
-</template>
-
-<template name="contactForm">
-  <div class="row row-centered">
-  <div id="contact-container" class="col-xs-12 col-centered">
-    {{#if formSubmitted}}
-      <!-- Successful Submission Message -->
-      <div class="col-xs-12 col-centered">
-        <div class="alert alert-success">
-          <strong>
-            <span class="fa fa-envelope"></span>
-            Success! Message Sent!
-          </strong>
-        </div>
-      </div>
-    {{else}}
-      {{#if formError}}
-        <!-- Display Error Message -->
-        <div class="col-xs-12 col-centered">
-          <div class="alert alert-danger">
-            <strong>
-              <span class="fa fa-warning"></span>
-              Error! Please check your inputs!
-            </strong>
-          </div>
-        </div>
-      {{/if}}
-      
-      <!-- Start Contact Form -->
-      <form role="form" method="POST">
-      <div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 col-centered">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" class="form-control" name="name" placeholder="Name" pattern="[a-zA-Z]+" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" class="form-control" name="email" placeholder="Email" required>
-        </div>
-        <div class="form-group">
-          <label for="phone">Phone</label>
-          <input type="phone" class="form-control" name="phone" placeholder="Phone" required>
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea name="message" class="form-control" rows="5" placeholder="Message" required></textarea>
-        </div>
-        <button type="submit" name="submit" class="btn btn-warning btn-lg pull-right">Submit</button>
-      </div>
-    </form>
-    {{/if}}
-  </div>
-</div>
-  
+  {{> contactInfo}}
+  {{> contactLogos }}
 </template>
 
 <template name="contactInfo">
@@ -85,6 +12,23 @@
           <h3>Western Canada: 1-866-443-2293</h3>
           <h3><a href="mailto:orders.canada@pioneerballoon.com">orders.canada@pioneerballoon.com</a></h3>
       </header>
-
     </section>
+</template>
+
+<template name="contactLogos">
+  <section id="header">
+    
+    <div class="row">
+      <div id="contact-main-logo-container">
+        <a href="{{ pathFor 'homepage' }}">
+          <img class="img-responsive" src="pllogo.jpg" alt="main-logo">
+        </a>
+      </div>
+    </div>
+    
+    <div id="contact-small-logo-container" class="row">
+      {{> smallLogos }}
+    </div>
+
+  </section>
 </template>

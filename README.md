@@ -51,14 +51,14 @@ Notes for Glory:
 Meeting Notes - Week of Nov 11
 ******************************************************
 
-1.  SEO 
+(x)1.  SEO 
 2.  Include all relevant resources 
-3.  Add Western Canada Phone #
+(x)3.  Add Western Canada Phone #
 4.  Layout: Review QuickLink format vs. Standard layout.
 5.  Make click event on table headers for price ONLY
 6.  Create page for Stock Balloons
 7.  French Language Content
-8.  Add Maple Leaf to top-right of all pages
+(x)8.  Add Maple Leaf to top-right of all pages
 9.  Get logo as .png with transparent background
 10. IE BUG or palette stretch in diff browsers?  
 11. View Each Balloon individually (from within a colour palette)

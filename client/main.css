@@ -29,6 +29,10 @@ body {
   font-family: 'GothamBold';
 }
 
+#main-layout-container {
+  position: relative;
+}
+
 button, .btn {
   font-family: 'GothamLight';
 }
@@ -332,7 +336,7 @@ header
 }
 
 .contact-header {
-  padding: 5em 0 3em 0 !important;
+  padding: 3em 0 2em 0 !important;
 }
 
 #codes,.footer {
@@ -367,6 +371,9 @@ header
 #mapleleaf img {
   max-width: 2em;
   float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 /* flip NAV to Menu Mode*/
@@ -615,4 +622,8 @@ header
 .btn-show-all {
   background: #ea1d22;
   margin: 1em;
+}
+
+.filter-button-container {
+  margin: 0.5em 0 0.5em 0;
 }

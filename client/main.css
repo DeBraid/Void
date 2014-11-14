@@ -281,6 +281,15 @@ header
          font-size: 2em;   
         }
 
+#small-logo-container {
+  margin-top: 1em;
+}
+
+.small-homepage-logos {
+  width: 40%;
+  margin: 1em;
+
+}
 
 /*********************************************************************************/
 /* CODES                                                                        */

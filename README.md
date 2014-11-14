@@ -69,17 +69,3 @@ Meeting Notes - Week of Nov 11
 15. Contact page: insert main, Qualatex and AdRite logos 
 16. Add CSS effect to nav to show routeActive
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-

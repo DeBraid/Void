@@ -28,6 +28,13 @@ var filters = {
   }, 
   scrollToTop: function () {
     document.body.scrollTop = document.documentElement.scrollTop = 0;
+  },
+  makeColumnUnsortable: function () {
+    Meteor.defer(function  (argument) {
+      $('.Product').map(function()  {
+        this.className = "Product Description";
+      });
+    })
   }
 }
 
@@ -35,6 +42,7 @@ Router.onBeforeAction(filters.setBackground);
 Router.onBeforeAction(filters.clearInputValue);
 Router.onAfterAction(filters.showScrollToTopButton);
 Router.onAfterAction(filters.scrollToTop);
+Router.onAfterAction(filters.makeColumnUnsortable);
 
 // Routes
 Router.map(function() {

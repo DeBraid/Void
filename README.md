@@ -51,21 +51,21 @@ Notes for Glory:
 Meeting Notes - Week of Nov 11
 ******************************************************
 
-(x)1.  SEO 
 2.  Include all relevant resources 
-(x)3.  Add Western Canada Phone #
 4.  Layout: Review QuickLink format vs. Standard layout.
-5.  Make click event on table headers for price ONLY
 6.  Create page for Stock Balloons
 7.  French Language Content
-(x)8.  Add Maple Leaf to top-right of all pages
 9.  Get logo as .png with transparent background
 10. IE BUG or palette stretch in diff browsers?  
 11. View Each Balloon individually (from within a colour palette)
   -- is this too resource intensive? (TEST!) 
-12. Carousel timer aprox 4000ms
+16. Add CSS effect to nav to show routeActive
+(x)1.  SEO 
+(x)3.  Add Western Canada Phone #
+(x)5.  Make click event on table headers for price ONLY
+(x)8.  Add Maple Leaf to top-right of all pages
+(x)12. Carousel timer aprox 4000ms
 (x)13. remove title and header from home page
 (x)14. see above, replace with Qualatex and AdRite logos
 (x)15. Contact page: insert main, Qualatex and AdRite logos 
-16. Add CSS effect to nav to show routeActive
 

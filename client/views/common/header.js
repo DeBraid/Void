@@ -22,21 +22,3 @@ var latex = ['roundballoons','heartballoons','quicklinkonecolour','adwave','adwr
      return template === route && _.contains(latex, route) ? 'active' : '';
   
 });
-
-// Qualatex® Latex
-//     {item : "One-Colour Print"},
-//     {item : "Heart Balloons"},
-//     {item : "Multi-Colour Print"},
-//     {item : "QuickLinkTM One-Colour"},
-//     {item : "AdWrap® Balloons "},
-//     {item : "AdWave® Balloons"},
-//     {item : "Giant Latex Balloons"},
-// Economy Line
-// {item : "AdRite™ Latex Balloons"},
-// {item : "Cloudbuster Balloons"},
-// {item : "Outdoor Balloons Print"},
-// Qualatex® Microfoil®
-// {item : "Small Quantity Screen Print Balloons"},
-// {item : "Large Quantity Flexo Print Balloons"},
-// Balls
-// return

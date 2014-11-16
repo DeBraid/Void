@@ -14,8 +14,7 @@ Template.quicklinkonecolour.settings = function () {
                         
                         var html = "<span sortString=" + sortString + ">" + myString + "</span>";
                         return Spacebars.SafeString(html);
-                    },
-                    sort: -1
+                    }
                 }, {
                     key: 'Printing',
                     label: 'Printing'

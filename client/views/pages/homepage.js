@@ -8,3 +8,9 @@ Template.carousel.helpers({
     ]
   } 
 }); 
+
+Template.carousel.rendered = function () {
+  $('.carousel').carousel({
+    interval: 4000
+  });
+};

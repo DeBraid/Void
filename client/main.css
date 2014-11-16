@@ -95,6 +95,9 @@ td {
   margin-top: 0;
   font-size: 1.05em;
 }
+th.Product.Description {
+  color: #0072BB;
+}
 
 td.Product.Description {
   width: 33% !important;
@@ -578,8 +581,7 @@ header
   color: #ffdf00 !important;
 }
 
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
+/* CUSTOMIZE THE CAROUSEL ------------------------ */
 
 /* Carousel base class */
 .carousel {
@@ -601,6 +603,7 @@ header
   height: 450px;
   margin-top: 2em;
 }
+
 .carousel img {
   position: absolute;
   top: 0;

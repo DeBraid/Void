@@ -605,9 +605,8 @@ header
   min-height: 400px;
 }
 
-#grid-image {   
-  height: 20em;
-  overflow: hidden;
+#grid-image a {   
+  background-color : transparent;
 }
 
 #grid-image p {

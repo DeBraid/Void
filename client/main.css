@@ -299,9 +299,18 @@ header
   margin: 0 auto;
 }
 .small-homepage-logos {
-  width: 40%;
   margin: 1em;
+}
 
+@media (max-width: 990px) {
+  #qualatexLogo img {
+    width: 50%;
+  }
+}
+@media (max-width: 300px) {
+  #qualatexLogo img {
+    width: 100%;
+  }
 }
 
 /*********************************************************************************/
@@ -623,3 +632,4 @@ header
 .filter-button-container {
   margin: 0.5em 0 0.5em 0;
 }
+

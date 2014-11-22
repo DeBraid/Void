@@ -37,7 +37,7 @@ Template.layout.events({
         var newModal = $('.modal-body > div');
 
         newTitle.text('' + myText + '');
-        newModal.html('<div class="col-lg-12"><img id="modalImage" src="'+ myImage + '" /></div>');
+        newModal.html('<div class="col-lg-12"><img id="modalImage" class="img-responsive" src="'+ myImage + '" /></div>');
         
     },
     'click .srcs': function (e,t) {

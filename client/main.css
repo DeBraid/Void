@@ -513,8 +513,8 @@ header
 }
 
 #modalImage {
-  width: 80%;
-  margin: 10%;
+  width: 90%;
+  margin: 0 2em 0 2em;
 }
 
 .modal-title {
@@ -549,12 +549,6 @@ header
 }
 
 #primary-image {
-  max-height: 12em;
-  overflow: hidden;
-}
-
-#primary-image > img {
-  max-height: 20em;
   cursor: pointer;
 }
 

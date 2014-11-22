@@ -1,3 +1,4 @@
+
 Template.categories.helpers({
     latexMenu: function () {
         return [
@@ -5,16 +6,16 @@ Template.categories.helpers({
             { title : "<p>Heart Balloons</p>" , path : "heartballoons", src : "Heart.jpg", href : "" },
             { title : "<p>Multi-Colour Print</p>" , path : "multicolourprint", src : "MulticolourCrop.png", href : "" },
             { title : "<p>QuickLink™ One-Colour</p>" , path : "quicklinkonecolour", src : "qlinkarch.jpg", href : "" },
-            { title : "<p>AdWrap® Balloons</p>" , path : "adwrap", src : "AdWrapStockAware.jpg", href : "" },
-            { title : "<p>AdWave® Balloons</p>" , path : "adwave", src : "Adwaves2014.jpg", href : "" },
+            { title : "<p>AdWrap® Balloons</p>" , path : "adwrap", src : "adwrap.png", href : "" },
+            { title : "<p>AdWave® Balloons</p>" , path : "adwave", src : "adwaves.png", href : "" },
             { title : "<p>Giant Latex Balloons</p>" , path : "giantlatexballoons", src : "giantballoons.jpg", href : "" }
 
         ]
     },
     ballsMenu: function () {
         return [
-            { title : "<p>AdMax™ Mini Sport Balls</p>" , path : "admaxminisportballs", src : "footballstripe.jpg" },
-            { title : "<p>Beachballs</p>" , path : "beachballs", src : "16inchbeachball.jpg" },
+            { title : "<p>AdMax™ Mini Sport Balls</p>" , path : "admaxminisportballs", src : "admaxsport.png" },
+            { title : "<p>Beachballs</p>" , path : "beachballs", src : "beachballs.png" },
             { title : "<p>AdPunch™ Balls</p>" , path : "adpunchballs", src : "adpunchballs.jpg" }
         ]
     },
@@ -22,7 +23,7 @@ Template.categories.helpers({
         return [
             { title : "<p>Pop Up Banners</p>" , path : "popupbanners", src : "verticalpopup.jpg" },
             { title : "<p>Table Covers</p>" , path : "tablecovers", src : "tablecoversCrop.png" },
-            { title : "<p>Event Tents</p>" , path : "eventtents", src : "newnationalcellularCrop.png" },
+            { title : "<p>Event Tents</p>" , path : "eventtents", src : "event-tent.png" },
             { title : "<p>Promotional Flags</p>" , path : "promoflags", src : "flagsredone.jpg" }
         ]
     },
@@ -36,8 +37,8 @@ Template.categories.helpers({
     adriteMenu: function () {
         return [
             { title : "<p>AdRite™ Latex Balloons</p>" , path : "adriteeconomyline", src : "adritebasicpal.jpg" },
-            { title : "<p>Cloudbuster Balloons</p>" , path : "cloudbuster", src : "cloudbuster.jpg" },
-            { title : "<p>Outdoor Balloons Print</p>" , path : "outdoorballoons", src : "outdoor-asst-basic.jpg" }
+            { title : "<p>Cloudbuster Balloons</p>" , path : "cloudbuster", src : "cloudbuster.png" },
+            { title : "<p>Outdoor Balloons Print</p>" , path : "outdoorballoons", src : "outdoor.png" }
             
         ]
     }

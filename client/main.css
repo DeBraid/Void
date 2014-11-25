@@ -235,10 +235,14 @@ header
     cursor: default;
   }
 
+  #header .btn {
+    margin-bottom: 0.5em;
+  }
+
 
   #header #logo {
-    margin-top: -6em;
-    margin-bottom: -10em;
+    margin: 1em 0 2em 0;
+    width: 95%;
   }
     #header span { color: #009ae2 }
 
@@ -292,6 +296,9 @@ header
 }
 #contact-main-logo-container .img-responsive {
   margin: 0 auto;
+}
+#contact-main-logo-container #logo {
+   margin: 0;
 }
 #contact-small-logo-container {
   max-width: 400px;

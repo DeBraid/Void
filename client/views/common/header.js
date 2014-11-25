@@ -16,8 +16,8 @@ UI.registerHelper('activeIfTemplateIs', function (template) {
 var latex = ['roundballoons','heartballoons','quicklinkonecolour','adwave','adwrap','adriteeconomyline', 'latexMenu'];
      var currentRoute = Router.current(),
      route = currentRoute.lookupTemplate();
-     console.log("route", route);
-     console.log("template", template);
+     // console.log("route", route);
+     // console.log("template", template);
 
      return template === route && _.contains(latex, route) ? 'active' : '';
   

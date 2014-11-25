@@ -55,11 +55,11 @@ Meeting Notes - Week of Nov 11
 4.  Layout: Review QuickLink format vs. Standard layout.
 6.  Create page for Stock Balloons
 7.  French Language Content
-9.  Get logo as .png with transparent background
 10. IE BUG or palette stretch in diff browsers?  
 11. View Each Balloon individually (from within a colour palette)
   -- is this too resource intensive? (TEST!) 
 16. Add CSS effect to nav to show routeActive
+(x)9.  Get logo as .png with transparent background
 (x)1.  SEO 
 (x)3.  Add Western Canada Phone #
 (x)5.  Make click event on table headers for price ONLY

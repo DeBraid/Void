@@ -372,8 +372,7 @@ header
 
 #charges {
   color: #0072bb;
-  text-shadow: 0 0 0.5px rgba(255,255,255,0.15);
-  font-size: 1.5em;
+  font-size: 1.15em;
 }
 
 .form-control:focus {

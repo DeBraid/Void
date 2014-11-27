@@ -6,13 +6,14 @@ Template.roundballoons.settings = function () {
         fields: [{
                     key: 'Product Description',
                     label: 'Product -- Price Per Balloon 4ABCD',
-                    fn: function (str) {
+                    fn: function (str, obj) {
                         var sortString = ("0000" + parseInt(str, 10)).slice(-4),
                             unit = 'inch',
                             size = str.split(unit),
                             myString = "" + size[0] + " " + unit + " " + size[1] + "";
                         
-                        var html = "<span sortString=" + sortString + ">" + myString + "</span>";
+                        var html = "<p sortString=" + sortString + ">" + myString + "</p>" + 
+                                    "<p>" + obj["Product Description_fr"] + "</p>";
                         return Spacebars.SafeString(html);
                     },
                     sort: 'ascending'

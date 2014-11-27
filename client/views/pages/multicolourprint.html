@@ -7,6 +7,7 @@
 
     <div class="row">
       <h3>Two-Colour Print</h3>
+      <h3>Impression à 2 couleurs</h3>
       {{> yield region='filterdropdown' }}      
     </div>
     <div class="row">
@@ -30,6 +31,7 @@
 <template name="multiheader">
   <div class="row">
     <h1>Latex Multi-Colour Print Balloons</h1>
+    <h1>Ballons à impression multicolore</h1>
   </div>
 
   <div class="row">
@@ -38,6 +40,7 @@
     </div>
     <div class="col-lg-7 col-md-6 col-sm-12">
       <h4>Prices below include balloons with one-side imprint; add additional charges.</h4>
+      <h4>Impression – 1 côté Prix par ballon</h4>
     </div>
     <div class="col-lg-2 col-md-3 col-sm-12 pull-right">
       {{> biodeg}}
@@ -50,10 +53,14 @@
 
 <template name="multicolourprinting">
   <h4>IMPRESS V™ Multi-Colour Printing</h4>
+  <h4>Impression multicolore IMPRESS V™</h4>
+
 
   <ul>
     <li>Due to unique challenges involved in printing on a round, flexible surface, ink colours will shift approximately 1/8".</li>
+    <li>Due aux conditions d’instabilité durant l’impression sur une surface ronde et flexible, les couleurs d’encre bougeront d’environ 1/8 po.</li>
     <li>Order acceptance will be based on approval of artwork and printing capabilities.  A pre-production sample may be required.</li>
+    <li>L’acceptation de la commande sera basée sur l’approbation de la conception graphique et la capacité d’imprimer les ballons.</li>
     <li>Balloons need to be inflated and viewed from normal viewing distance of 5 ft. in order to evaluate colours and printing.</li>
   </ul>
 
@@ -61,6 +68,7 @@
 
 <template name="threecolourplustable">
   <h3>Three, Four, Five Colour Spot Print</h3>
+  <h3>Impression à 3, 4, 5 couleurs</h3>
 
       {{> reactiveTable collection=threecolourplus settings=settings}}
 </template>

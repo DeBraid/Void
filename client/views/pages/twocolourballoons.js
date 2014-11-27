@@ -5,14 +5,15 @@ Template.multicolourprint.settings = function () {
             fields: [{
                             key: 'Product Description',
                             label: 'Product -- Price per Balloon 2ABCD',
-                            fn: function (str) {
+                            fn: function (str, obj) {
                                 var sortString = ("0000" + parseInt(str, 10)).slice(-4),
                                     unit = 'inch',
                                     str1 = str.split(unit),
                                     size = str1,
                                     myString = "" + size[0] + " " + unit + " " + str1[1] + "";
                                 
-                                var html = "<span sortString=" + sortString + ">" + myString + "</span>";
+                                var html = "<p sortString=" + sortString + ">" + myString + "</p>" + 
+                                    "<p>" + obj["Product Description_fr"] + "</p>";
                                 return Spacebars.SafeString(html);
                             },
                             sort: 'ascending'

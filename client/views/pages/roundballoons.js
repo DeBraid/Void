@@ -5,7 +5,7 @@ Template.roundballoons.settings = function () {
         showNavigation: 'never',
         fields: [{
                     key: 'Product Description',
-                    label: 'Product -- Price Per Balloon 4ABCD',
+                    label: 'Product -- Price Per Balloon 4ABCD -- Description du produit ',
                     fn: function (str, obj) {
                         var sortString = ("0000" + parseInt(str, 10)).slice(-4),
                             unit = 'inch',

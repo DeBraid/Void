@@ -200,9 +200,7 @@ td.Product.Description {
 }
 
 @media (max-width: 330px) {
-  .navbar-brand {
-    font-size: 1.25em;
-  }
+
 }
 
 @media (max-width: 390px) {

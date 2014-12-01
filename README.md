@@ -60,7 +60,7 @@ Meeting Notes - Week of Nov 28
 
 
 1.  Option to view each balloon indiv. 
-2.  Update title to "AdMax Mini Sport Balls and Play Balls"
+(x)2.  Update title to "AdMax Mini Sport Balls and Play Balls"
 3.  No colour palette for SuperAgate (milti colour)
 4.  Microfoils take out shapes (add images provided)
 5.  add globe balloons to roundballoon and giant dropdown

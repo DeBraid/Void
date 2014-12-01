@@ -68,3 +68,9 @@ UI.registerHelper('hasPalDropdown', function () {
     return !_.contains(noPals, routeName);
 
 });
+
+Template.reactiveTable.rendered = function () {
+  var desc = $('th.Product'), 
+    title = desc.text().split("▼");
+    return desc.text(title[0]);
+};

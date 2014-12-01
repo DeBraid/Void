@@ -312,7 +312,9 @@ header
     float: left;
   }
 }
-
+#qualatexLogo {
+  max-width: 330px;
+}
 @media (max-width: 990px) {
   #qualatexLogo img {
     width: 50%;

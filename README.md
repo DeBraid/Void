@@ -30,20 +30,6 @@ Transform the paper-based product catalogue into digital version.
   a.  set up large images w/ links to sections (duplicate nav, but visually)
   b.  see pioneer.com for template (also request these images).
 
-***************************
-  NOV 11th
-***************************
-
-9" Standard – Standards,9" Jewel or Fashion – Pierres précieuses ou de mode,9" Metallic – métallisées
-11" Standard – standards,11" Jewel or Fashion – Pierres précieuses ou de mode,11" Metallic, Pearl or Neon – Métallisées, perlées ou néons,16" Standard – Standards
-16" Jewel or Fashion Colours – Pierres précieuses ou de mode,16" Metallic or Pearl – Métallisées ou perlées
-
-
-Notes for Glory: 
-
-1.  no missed lines or double spaces. 
-2.  no punctuation or special characters
-
 
 
 
@@ -52,7 +38,7 @@ Meeting Notes - Week of Nov 11
 ******************************************************
 
 2.  Include all relevant resources 
-4.  Layout: Review QuickLink format vs. Standard layout.
+4.  Layout: go with Standard layout.
 6.  Create page for Stock Balloons
 7.  French Language Content
 10. IE BUG or palette stretch in diff browsers?  
@@ -68,4 +54,44 @@ Meeting Notes - Week of Nov 11
 (x)13. remove title and header from home page
 (x)14. see above, replace with Qualatex and AdRite logos
 (x)15. Contact page: insert main, Qualatex and AdRite logos 
+
+
+******************************************************
+Meeting Notes - Week of Nov 28
+******************************************************
+
+
+1.  Option to view each balloon indiv. 
+2.  Update title to "AdMax Mini Sport Balls and Play Balls"
+3.  No colour palette for SuperAgate (milti colour)
+4.  Microfoils take out shapes (add images provided)
+5.  add globe balloons to roundballoon and giant dropdown
+6.  RUSH -- get 24 HOURS ICON
+7.  Adrite Logo to Adrite page 
+8.  quicklink Logo to quicklink page 
+9.  remove arrow from product description (with disabled sort) 
+10. pouce for inches (_fr)
+11. for MENU: add fr on same line (see heading translations provided)
+12. set margin on products to 0 (<p> element inside <tr>)
+13. colour assortments (written description below table) can be removed as new colour palettes (select dropdown pics)
+14.  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

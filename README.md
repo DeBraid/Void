@@ -67,31 +67,10 @@ Meeting Notes - Week of Nov 28
 4.  Microfoils take out shapes (add images provided)
 5.  add globe balloons to roundballoon and giant dropdown
 6.  RUSH -- get 24 HOURS ICON
-7.  Adrite Logo to Adrite page 
-8.  quicklink Logo to quicklink page 
+(x)7.  Adrite Logo to Adrite page 
+(x)8.  quicklink Logo to quicklink page 
 9.  remove arrow from product description (with disabled sort) 
 10. pouce for inches (_fr)
 11. for MENU: add fr on same line (see heading translations provided)
 12. set margin on products to 0 (<p> element inside <tr>)
 13. colour assortments (written description below table) can be removed as new colour palettes (select dropdown pics)
-14.  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

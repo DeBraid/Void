@@ -1,13 +1,3 @@
-<template name="resourcesMenu">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<span class="caret"></span></a>
-  <ul class="dropdown-menu" role="menu">
-    <li><a href="{{ pathFor 'geninfo' }}">General Information</a></li>
-    {{#each resources }}
-    <li><a href="{{ href }}" target="_blank">{{ title }}</a></li>
-    {{/each }}
-  </ul>
-</template>
-
 <template name="eventsMenu">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Events<span class="caret"></span></a>
   <ul class="dropdown-menu" role="menu">

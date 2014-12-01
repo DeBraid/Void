@@ -37,14 +37,12 @@ Transform the paper-based product catalogue into digital version.
 Meeting Notes - Week of Nov 11
 ******************************************************
 
-2.  Include all relevant resources 
-4.  Layout: go with Standard layout.
+(x)2.  Include all relevant resources 
+(x)4.  Layout: go with Standard layout.
 6.  Create page for Stock Balloons
 7.  French Language Content
 10. IE BUG or palette stretch in diff browsers?  
-11. View Each Balloon individually (from within a colour palette)
-  -- is this too resource intensive? (TEST!) 
-16. Add CSS effect to nav to show routeActive
+(-)16. Add CSS effect to nav to show routeActive
 (x)9.  Get logo as .png with transparent background
 (x)1.  SEO 
 (x)3.  Add Western Canada Phone #
@@ -66,11 +64,11 @@ Meeting Notes - Week of Nov 28
 3.  No colour palette for SuperAgate (milti colour)
 4.  Microfoils take out shapes (add images provided)
 5.  add globe balloons to roundballoon and giant dropdown
-6.  RUSH -- get 24 HOURS ICON
+(x)6.  RUSH -- get 24 HOURS ICON
 (x)7.  Adrite Logo to Adrite page 
 (x)8.  quicklink Logo to quicklink page 
 9.  remove arrow from product description (with disabled sort) 
 10. pouce for inches (_fr)
 11. for MENU: add fr on same line (see heading translations provided)
-12. set margin on products to 0 (<p> element inside <tr>)
+(x)12. set margin on products to 0 (<p> element inside <tr>)
 13. colour assortments (written description below table) can be removed as new colour palettes (select dropdown pics)

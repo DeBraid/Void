@@ -102,6 +102,10 @@ th.Product.Description {
 td.Product.Description {
   width: 33% !important;
 }
+
+td.Product.Description > p {
+  margin-bottom: 0;
+}
 /*********************************************************************************/
 /* TABLE (REACTIVE TABLE)                                                                        */
 /*********************************************************************************/
@@ -615,7 +619,7 @@ header
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 450px;
+  height: 500px;
   margin-top: 2em;
 }
 
@@ -644,4 +648,3 @@ header
 .filter-button-container {
   margin: 0.5em 0 0.5em 0;
 }
-

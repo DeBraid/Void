@@ -34,6 +34,14 @@ var filters = {
       $('.Product').map(function()  {
         this.className = "Product Description";
       });
+
+      var item = "▼",
+        desc = $('th.Product'), 
+        stub = desc.text().split(item);
+
+      desc.text = stub[0];  
+
+
     })
   }
 }
